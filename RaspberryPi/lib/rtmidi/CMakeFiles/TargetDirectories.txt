@@ -1,0 +1,15 @@
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/install/local.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/install/strip.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/install.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/cmidiin.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/list_install_components.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/rtmidi_static.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/rtmidi.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/midiout.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/uninstall.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/midiprobe.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/qmidiin.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/midiclock.dir
+/home/pi/Desktop/VIDOS/lib/rtmidi/CMakeFiles/sysextest.dir

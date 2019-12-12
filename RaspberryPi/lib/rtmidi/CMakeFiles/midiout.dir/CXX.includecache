@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Desktop/VIDOS/lib/rtmidi/tests/midiout.cpp
+iostream
+-
+cstdlib
+-
+RtMidi.h
+/home/pi/Desktop/VIDOS/lib/rtmidi/tests/RtMidi.h
+windows.h
+-
+unistd.h
+-
+
+RtMidi.h
+exception
+-
+iostream
+-
+string
+-
+vector
+-
+

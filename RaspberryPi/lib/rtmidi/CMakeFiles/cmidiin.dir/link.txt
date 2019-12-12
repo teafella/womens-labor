@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall   CMakeFiles/cmidiin.dir/tests/cmidiin.cpp.o  -o tests/cmidiin -Wl,-rpath,/home/pi/Desktop/VIDOS/lib/rtmidi -rdynamic librtmidi.so.4.0.0 -lasound -lpthread 
