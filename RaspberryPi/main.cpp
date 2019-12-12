@@ -11,11 +11,14 @@
 
 #include <linux/input.h>
 
-#include "src/Engine.h"
-
 //Global defines
 #include <time.h>
 #define PRINT_FRAMETIME false
+
+//Internal includes
+#include "src/util.h"
+#include "src/audio/audio.h"
+#include "src/input.h"
 
 int end_program = 0;
 
@@ -31,7 +34,7 @@ bool programRunning = true;
 int main (int argc, char *argv[])
 {
 
-  // command line arguments ( for qa and tests )
+  // command line arguments
   bool run_tests = false;
   if (argc == 2) {
     if (strcmp(argv[1], "test") == 0 ) {
@@ -40,27 +43,28 @@ int main (int argc, char *argv[])
     }
   }
 
-  bcm_host_init();
-  //Start Engine
-  engine = new Engine(run_tests);
+  //Start Inputs
+  Input* input = new Input(run_tests);
+
+  //Start Audio Engine
+  Audio* audio = new Audio(input);
 
   frame_begin = Util::ProgramTime();
-  while (!end_program) {
-    frame_time = (Util::ProgramTime() - frame_begin) / 100.;
-    frame_begin = Util::ProgramTime();
-    engine->Update();
+  // while (!end_program) {
+  //   frame_time = (Util::ProgramTime() - frame_begin) / 100.;
+  //   frame_begin = Util::ProgramTime();
 
-    if (PRINT_FRAMETIME) {
-      std::cout << "Frame Time: " << frame_time  << std::endl;
-    }
-    //detect dips below 55 fps 
-    else if (frame_time > 0.018) { 
-      std::cout << "Framerate Dip: " << frame_time  << std::endl;
-    }
+  //   if (PRINT_FRAMETIME) {
+  //     std::cout << "Frame Time: " << frame_time  << std::endl;
+  //   }
+  //   //detect dips below 55 fps 
+  //   else if (frame_time > 0.018) { 
+  //     std::cout << "Framerate Dip: " << frame_time  << std::endl;
+  //   }
 
-  }
+  // }
 
-  delete(engine);
+  delete(audio);
   fflush(stdout);
   fprintf(stderr, "%s.\n", strerror(errno));
   return 0;

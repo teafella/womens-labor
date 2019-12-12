@@ -74,8 +74,6 @@ void Audio::loadByteWaveTable(unsigned char* table, int size){
 
 bool Audio::run(){
 	//set up last frame buffer last write location
-	lastFrameL = std::begin(frameBuffer[0]);
-	lastFrameR = std::begin(frameBuffer[1]);
 
 	ScopedPaHandler paInit;
 	if ( paInit.result() != paNoError ) {
@@ -95,6 +93,7 @@ bool Audio::run(){
 			}
 	}
 	return true;
+
 }
 
 
@@ -209,15 +208,12 @@ int Audio::paCallbackMethod(const void *inputBuffer, void *outputBuffer,
 
 	float playSpeed = (thisTableSize/(float)SAMPLE_RATE * hertz) * (pow(2, (int)(0.5 * (carrierOctaveRange * 12))/12. ) ); //(quantized)don't cast if you want free frequency control
 
-	float modSpeed = playSpeed * (pow(2, (int)(0.5 * (modOctaveRange * 12))/12. ) ); //0.5 can be cv
-	//std::cout<< thisTableSize <<std::endl;
+	float ratio = 0.25; // can be CV
+	float modSpeed = playSpeed * (pow(2, (int)(ratio * (modOctaveRange * 12))/12. ) );
 
-	// float bufferCopyL[FRAMES_PER_BUFFER];
-	// float bufferCopyR[FRAMES_PER_BUFFER];
 	if(thisTableSize != 0){
 		for ( i = 0; i < framesPerBuffer; i++ )
 		{
-
 			mod_phase += modSpeed;
 			while ( mod_phase >= thisTableSize ) mod_phase -= thisTableSize;
 
@@ -225,39 +221,19 @@ int Audio::paCallbackMethod(const void *inputBuffer, void *outputBuffer,
 			if(carrier_phase < 0) carrier_phase = 0;
 			while ( carrier_phase >= thisTableSize ) carrier_phase -= thisTableSize;
 
-			right_phase += playSpeed + sine[(int)mod_phase] ;
-			if(right_phase < 0) right_phase = 0;
-			while ( right_phase >= thisTableSize ) right_phase -= thisTableSize;
+			out_phase = carrier_phase * sine[(int)mod_phase];
+			if(out_phase < 0) out_phase = 0;
+			while ( out_phase >= thisTableSize ) out_phase -= thisTableSize;
 
-			bufferCopyL[i] = sine[(int)carrier_phase];
-			bufferCopyR[i] = sine[(int)mod_phase];
-
-			*out++ = sine[(int)right_phase];  /* left */
-			//buffer[0][i]= *out;
+			*out++ = sine[(int)out_phase];  /* left */
 			float left = *out;
-			*out++ = sine[(int)right_phase];  /* right */
+			*out++ = sine[(int)out_phase];  /* right */
 			float right = *out;
 		}
 	}
 	else{
 		std::cout<< "WARNING: No Wavetable Loaded."<<std::endl;
 	}
-	
-	recordMutex.lock();
-	if( lastFrameL == std::end(frameBuffer[0]) ) {
-		lastFrameL = std::begin(frameBuffer[0]);
-		newBufferFlag = true;
-	}
-	if( lastFrameR == std::end(frameBuffer[1]) ) {
-		lastFrameR = std::begin(frameBuffer[1]);
-		newBufferFlag = true;
-	}
-
-	lastFrameL = std::copy(std::begin(bufferCopyL), std::end(bufferCopyL), lastFrameL);
-	lastFrameR = std::copy(std::begin(bufferCopyR), std::end(bufferCopyR), lastFrameR);
-	recordMutex.unlock();
-
-
 
 	return paContinue;
 }
@@ -267,22 +243,5 @@ void Audio::paStreamFinishedMethod()
 {
 	printf( "Stream Completed: %s\n", message );
 }
-
-bool Audio::hasNewBuffer(){
-	return newBufferFlag;
-}
-
-std::vector<float> Audio::getBuffer(int index){
-	newBufferFlag = false;
-	recordMutex.lock();
-	std::vector<float> out = frameBuffer[index];
-	recordMutex.unlock();
-	return out;
-}
-
-int Audio::getFramesPerBuffer(){
-	return FRAMES_PER_BUFFER;
-}
-
 
 #endif

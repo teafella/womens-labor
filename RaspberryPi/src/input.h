@@ -7,37 +7,39 @@
 #include <functional>
 #include <vector>
 #include <memory>
+#include <atomic>
 
+#include "src/osc/oscSender.h"
 
 //forward declartion
-class Midi;
-class NoteMessage;
-class Button;
 
 class Input
 {
 public:
 	Input(bool run_tests = false);
 	~Input();
-	std::thread input_thread_;
+	std::thread serial_thread_;
 
 	//not a strict singleton but gets last instatiated instance (im lazy)
 	static Input* singleton_;
 
 private:
+	//state variables
+	std::atomic<bool> on_;
+	std::atomic<float> pitch_;
+	std::vector<float> spectrum_;
 
-	bool readADC();
 
-	int serial_fd;
+	int serial_fd_;
+	std::atomic<bool> serial_thread_running_;
 
 	//OSC
-	bool setupOSC();
-	bool readOSC();
+	OSCSender osc_sender_;
 	bool SendOSCTest();
 
 	//SERIAL
-	bool setupSerial();
-	bool readSerial();
+	bool SetupSerial();
+	bool ReadSerial();
 
 	static float smooth(float in, float PrevSmoothVal, float PrevRawVal, double weight = 0.5);
 	// float FilterInput(float in, BiquadChain* filter);
