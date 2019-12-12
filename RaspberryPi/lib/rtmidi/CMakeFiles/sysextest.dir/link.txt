@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall   CMakeFiles/sysextest.dir/tests/sysextest.cpp.o  -o tests/sysextest -Wl,-rpath,/home/pi/Desktop/VIDOS/lib/rtmidi -rdynamic librtmidi.so.4.0.0 -lasound -lpthread 

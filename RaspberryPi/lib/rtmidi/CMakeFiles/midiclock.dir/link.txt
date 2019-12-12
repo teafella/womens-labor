@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall   CMakeFiles/midiclock.dir/tests/midiclock.cpp.o  -o tests/midiclock -Wl,-rpath,/home/pi/Desktop/VIDOS/lib/rtmidi -rdynamic librtmidi.so.4.0.0 -lasound -lpthread 

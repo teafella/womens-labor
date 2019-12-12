@@ -1,0 +1,1045 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"feedb",
+				"feedback_color"
+			],
+			[
+				"Gl",
+				"GLubyte"
+			],
+			[
+				"last",
+				"last_frame_data_"
+			],
+			[
+				"data",
+				"data_size"
+			],
+			[
+				"send",
+				"send_thread_"
+			],
+			[
+				"this",
+				"this_layer"
+			],
+			[
+				"ndi",
+				"ndi_thread"
+			],
+			[
+				"SendIwth",
+				"SendWithNDIHelper"
+			],
+			[
+				"display",
+				"DisplayModMenu"
+			],
+			[
+				"Di",
+				"DisplayModMenu"
+			],
+			[
+				"save",
+				"save_thread_running_"
+			],
+			[
+				"uniform",
+				"uniforms"
+			],
+			[
+				"is",
+				"is_saving"
+			],
+			[
+				"cv",
+				"cvVal"
+			],
+			[
+				"pot",
+				"pot_filters_"
+			],
+			[
+				"Biqua",
+				"BiquadChain"
+			],
+			[
+				"Filter",
+				"FilterInput"
+			],
+			[
+				"max",
+				"max_filter_out_"
+			],
+			[
+				"sample",
+				"sample_time_difference"
+			],
+			[
+				"sam",
+				"sample_time_difference"
+			],
+			[
+				"frame",
+				"frame_time"
+			],
+			[
+				"inVal",
+				"in_val"
+			],
+			[
+				"feed",
+				"feedback_color"
+			],
+			[
+				"Set",
+				"SetPalette"
+			],
+			[
+				"color",
+				"color_palette"
+			],
+			[
+				"last_root",
+				"last_root_saturation_"
+			],
+			[
+				"ro",
+				"root_saturation"
+			],
+			[
+				"mirro",
+				"mirror_amt"
+			],
+			[
+				"He",
+				"HexDist"
+			],
+			[
+				"thi",
+				"third_mat"
+			],
+			[
+				"mirror",
+				"mirrorA"
+			],
+			[
+				"Add",
+				"AddInput"
+			],
+			[
+				"mirr",
+				"mirrorA"
+			],
+			[
+				"mi",
+				"mirror_amt"
+			],
+			[
+				"shape",
+				"shape_in"
+			],
+			[
+				"fra",
+				"fragShaderStr"
+			],
+			[
+				"rota",
+				"rotation_mat"
+			],
+			[
+				"cross",
+				"cross_mod_scale"
+			],
+			[
+				"new",
+				"new_layer"
+			],
+			[
+				"texture",
+				"texture_unit"
+			],
+			[
+				"layer",
+				"layer_inputs_"
+			],
+			[
+				"kale",
+				"kaleidoA"
+			],
+			[
+				"kal",
+				"kaleidoA"
+			],
+			[
+				"kaleido",
+				"kaleidoA"
+			],
+			[
+				"ka",
+				"kaleidoA"
+			],
+			[
+				"smooth",
+				"smoothVal"
+			],
+			[
+				"Toggle",
+				"ToggleSettingsMenu"
+			],
+			[
+				"settings",
+				"settings_menu_index_"
+			],
+			[
+				"uni",
+				"uniform_mutex"
+			],
+			[
+				"float",
+				"float_uniforms_"
+			],
+			[
+				"make",
+				"make_pair"
+			],
+			[
+				"LZX",
+				"LZX_MODE"
+			],
+			[
+				"mod",
+				"mod_menu_index_"
+			],
+			[
+				"SEt",
+				"SetLEDColor"
+			],
+			[
+				"Des",
+				"DestroyEngine"
+			],
+			[
+				"main",
+				"main_thread"
+			],
+			[
+				"context",
+				"context_height"
+			],
+			[
+				"rotat",
+				"rotation"
+			],
+			[
+				"T",
+				"TWO_PI"
+			],
+			[
+				"rotation",
+				"rotation_mat"
+			],
+			[
+				"zoom",
+				"zoom_pos"
+			],
+			[
+				"fee",
+				"feedback_scalar"
+			],
+			[
+				"feedback",
+				"feedback_amp"
+			],
+			[
+				"shape2",
+				"shape2_mod_amount"
+			],
+			[
+				"feedback_",
+				"feedback_color"
+			],
+			[
+				"polar",
+				"polar_flip"
+			],
+			[
+				"vec3",
+				"vec3_uniforms_"
+			],
+			[
+				"pro",
+				"program_begin"
+			],
+			[
+				"onMod",
+				"onModMatrixValue"
+			],
+			[
+				"Update",
+				"UpdateInput"
+			],
+			[
+				"Create",
+				"CreateInput"
+			],
+			[
+				"cross_mod",
+				"cross_mod_amount"
+			],
+			[
+				"input",
+				"input_map_"
+			],
+			[
+				"glU",
+				"GLuint"
+			],
+			[
+				"create",
+				"create_layers"
+			],
+			[
+				"verte",
+				"vertex_buffer_"
+			],
+			[
+				"ver",
+				"vertex_buffer_"
+			],
+			[
+				"to",
+				"to_string"
+			],
+			[
+				"GetTexture",
+				"GetTextureUnit"
+			],
+			[
+				"tex",
+				"texture_unit"
+			],
+			[
+				"inpu",
+				"input_texture_units_"
+			],
+			[
+				"contxt",
+				"context_height"
+			],
+			[
+				"shder",
+				"Shader"
+			],
+			[
+				"shader",
+				"shader_name"
+			],
+			[
+				"recive",
+				"recieve_initialized_"
+			],
+			[
+				"recieve",
+				"recieve_instances_"
+			],
+			[
+				"loa",
+				"loadNewScene"
+			],
+			[
+				"conte",
+				"CONTEXT_DIV"
+			],
+			[
+				"drift",
+				"driftScalarA"
+			],
+			[
+				"Init",
+				"InitRecieve"
+			],
+			[
+				"backgru",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"entry",
+				"entry-header"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"backgrou",
+				"background-color\tproperty"
+			],
+			[
+				"border-top",
+				"border-top-right-radius"
+			],
+			[
+				"border-bot",
+				"border-bottom-right-radius"
+			],
+			[
+				"bottom-",
+				"border-bottom-left-radius\tproperty"
+			],
+			[
+				"gra",
+				"linear-gradient"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"backgron",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
+				"sqs",
+				"sqs-block"
+			],
+			[
+				"sq",
+				"sqs-block-content"
+			],
+			[
+				"block",
+				"blockquote"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"meta",
+				"meta-below-title"
+			],
+			[
+				"post",
+				"post-category"
+			],
+			[
+				"blog-",
+				"blog-item-wrapper"
+			],
+			[
+				"text",
+				"text-decoration-line\tproperty"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"palette",
+				"palette1"
+			],
+			[
+				"summa",
+				"summary-heading"
+			],
+			[
+				"min-",
+				"min-height\tproperty"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"image",
+				"image-block"
+			],
+			[
+				"fot",
+				"font-size\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"event",
+				"eventCardRadius"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"page",
+				"pageWidth"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"sqs-block-",
+				"sqs-block-summary-v2"
+			],
+			[
+				"alt",
+				"alt_change"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "#ifndef INPUT_CPP\n#define INPUT_CPP\n\n#include \"input.h\"\n\n#include <iostream>\n#include <iomanip>\n#include <unistd.h>\n\n#include <string.h>\n#include <fstream>\n#include <fcntl.h>\n#include <cmath>\n#include <memory>\n\n//VIDOS classes\n#include \"src/io/oscListener.h\"\n#include \"src/io/oscSender.h\"\n#include \"src/util.h\"\n\n\n//wiringPi includes\n#define BASE 100\n#define SPI_CHAN 0\n#include <wiringPi.h>\n#include <softPwm.h>\n#include \"mcp3004.h\"\n\n//lib\n#include <lib/json.hpp>\n// for convenience\nusing json = nlohmann::json;\n\n#define MIDI_PORT 1 //Just leave this at one and the 1st midi device connected to PI will work\n\n\n#define USE_LED_PWM false\n#define USE_POT_LED_PWM false\n\n//smoothing globals\n#define SMOOTH_POT true\n#define SMOOTH_CV true\n\n\n//HARDWARE PINS!\n#define MUX_ADDRESS_PINA 24//0\n#define MUX_ADDRESS_PINB 25//2\n#define MUX_ADDRESS_PINC 26//3\n\n#define TRIG_A 20//29\n#define TRIG_B 21//28\n\n#define BUTTON_PIN_0 14\n#define BUTTON_PIN_1 15\n#define BUTTON_PIN_2 16\n\n// int LED_PIN[3][3] = {{7, 21, 22}, {23, 24, 25}, {4, 5, 11}};\nint LED_PIN[3][3] = {{0,1, 2}, {3, 4, 5}, {6,7,13}};\n\n#define POT1_LED_PIN 18//26 // also 12?\n#define POT3_LED_PIN 19//27\n\n#define SOFTPWM_RANGE 100\n\n#define NUM_MOD_STATES 2\n\n#define SAMPLE_RATE 100 // a second (Hz)\n\n//Debug\n#define DEBUG_PANEL true\n#define DEBUG_CVIN false\n\n#define DEBUG_CV 1\n\n#define SHOW_SAMPLETIME false\n#define USE_ADC true\n\nInput* Input::singleton_ = 0;\n\n\nInput::Input(bool run_tests) {\n\tsingleton_ = this;\n\tonButton = 0;\n\tonAltPot = 0;\n\tonCV = 0;\n\tonClock = 0;\n\tonModMatrix = 0;\n\tonPresetHold = 0;\n\tonPresetToggle = 0;\n\tadc_initialized_ = false;\n\n\n\t//initialize filter members\n\t// double gain = .001;\n\t// bool designedCorrectly = filter_model_.loPass(2680,  // fs\n\t//                          500,    // freq1\n\t//                          0,      // freq2. N/A for lowpass\n\t//                          4, \t    // filter order,\n\t//                          coeffs_, // coefficient array being filled\n\t//                          gain);   // overall gain\n\t// if (designedCorrectly == false) {\n\t// \tstd::cout << \"Input Filtering Parameters are Incorrect\" << std::endl;\n\t// }\n\t// int stages = (int) coeffs_.size();\n\t// for (int x = 0; x < CV_COUNT; ++x) {\n\t// \tBiquadChain this_chain(stages);\n\t// \tcv_filters_.push_back(this_chain);\n\t// }\n\t// for (int x = 0; x < POT_COUNT; ++x) {\n\t// \tBiquadChain this_chain(stages);\n\t// \tpot_filters_.push_back(this_chain);\n\t// }\n\n\t// go through input possibilities\n\t// try to use Hardware ADC\n\tStartADCThread(run_tests);\n\t//setup OSC control\n\t// setupOSC();\n\n\t//try to restore last save state of control values\n\t//\n\n\t//setup MIDI Control\n\tsetupMIDI(MIDI_PORT);\n}\n\nInput::~Input() {\n\tif (threadRunning) {\n\t\tthreadRunning = false;\n\n\t\tinputThread.join();\n\t\tosc_thread_.join();\n\t}\n\n\tdelete(myMIDI);\n}\n\nvoid Input::update() {\n\n}\n\nvoid Input::AddButtonCallback(std::function<void(int, int)> buttonCallback) {\n\tonButton = buttonCallback;\n\n\t// if (onButton) {\n\t// \tfor(int x = 0 ; x <BUTTON_COUNT; ++x) {\n\t// \t\tonButton(x, buttons_[x]->GetState() );\n\t// \t}\n\t// }\n\tResetButtonLED();\n}\n\nvoid Input::AddCVCallback(std::function<void(int, float)> cvCallback) {\n\tonCV = cvCallback;\n\n\t//callback on Current values to new target\n\t// if (onCV) {\n\t// \tfor (int x = 0; x < CV_COUNT; ++x) {\n\t// \t\tonCV(x, getPot(x) + getCV(x));\n\t// \t}\n\t// }\n}\n\nvoid Input::AddAltPotCallback(std::function<void(int, int, float)> potCallback) {\n\tonAltPot = potCallback;\n\n\t//callback on Current values to new target\n\t// if (onAltPot) {\n\t// \tfor (int x = 0; x < BUTTON_COUNT; ++x) {\n\t// \t\tfor (int y = 0; y < POT_COUNT; ++y) {\n\t// \t\t\tonAltPot(x, y, GetAltPot(x, y));\n\t// \t\t}\n\t// \t}\n\t// }\n}\n\nvoid Input::AddModMatrixCallback(std::function<void(glm::mat3)> modCallback) {\n\tonModMatrix = modCallback;\n\n\t//callback on Current values to new target\n\t// if (onModMatrix) {\n\t// \tonModMatrix(button_mod_matrix_);\n\t// }\n\n}\n\nvoid Input::AddModMatrixValueCallback(std::function<void(int, int, float)> modValueCallback) {\n\tonModMatrixValue = modValueCallback;\n\n\tif (onModMatrixValue) {\n\t\t//callback on individual mod matrix values\n\t\t// for ( int x = 0; x < 3; ++x) { //glm mat 3 is always size of 3\n\t\t// \tfor ( int y = 0; y < 3; ++y) {\n\t\t// \t\tonModMatrixValue(x, y, button_mod_matrix_[x][y]);\n\t\t// \t}\n\t\t// }\n\t}\n}\n\nvoid Input::AddPresetHoldCallback(std::function<void(int)> thisCallback) {\n\tonPresetHold = thisCallback;\n}\nvoid Input::AddPresetToggleCallback(std::function<void(int)> thisCallback) {\n\tonPresetToggle = thisCallback;\n}\n\nvoid Input::midiNoteCallback(NoteMessage* msg) {\n\tbool trig = msg->on;\n\tint this_channel = msg->channel;\n\tint this_note = msg->note;\n\t// std::cout << \"note callback: \" << trig << \" \" <<  this_note << std::endl;\n\n\tif (this_channel == 15) { // opz video channel\n\t\tif (trig) { //note on\n\t\t\tif (this_note % 12 == 0) {\n\t\t\t\tsingleton_->ToggleButton(0);\n\t\t\t}\n\t\t\telse if (this_note % 12 == 2) {\n\t\t\t\tsingleton_->ToggleButton(1);\n\t\t\t}\n\t\t\telse if (this_note % 12 == 4) {\n\t\t\t\tsingleton_->ToggleButton(2);\n\t\t\t}\n\t\t}\n\t\t//note off\n\t\telse {\n\n\t\t}\n\t}\n\n\tdelete msg;\n}\n\nvoid Input::midiCCCallback(int channel, int index, float value) {\n\tif (channel == 15) { // op-z video channel only for now\n\t\tif (index < 8) {\n\t\t\tsingleton_->SetPot(index, value, true);\n\t\t}\n\t\telse if (index < 15) {\n\t\t\t//osc 1 menu\n\t\t\tsingleton_->SetAltPot(0, index - 8, value );\n\t\t\t// std::cout << \"ccing alt 1\" << std::endl;\n\t\t}\n\t\telse if (index < 22) {\n\t\t\t//osc 2 menu\n\t\t\tsingleton_->SetAltPot(2, index - 15, value );\n\t\t}\n\t\telse if (index < 29) {\n\t\t\t// master menu\n\t\t\tsingleton_->SetAltPot(2, index - 22, value );\n\t\t}\n\t}\n}\n\nbool Input::setupMIDI(int port) {\n\tmyMIDI = new Midi(port);\n\tmyMIDI->setNoteMessageCallback(&midiNoteCallback);\n\tmyMIDI->setCCMessageCallback(&midiCCCallback);\n\treturn true;\n}\n\nbool Input::SendOSCTest() {\n\tOSCSender test_sender;\n\t// test_sender.send();\n}\n\nbool Input::setupOSC() {\n\tthreadRunning = true;\n\tosc_thread_ = std::thread(&Input::readOSC, this);\n\treturn true;\n}\n\nbool Input::readOSC() {\n\ttry {\n\t\tMyPacketListener listener(this);\n\t\tUdpListeningReceiveSocket s(\n\t\t    IpEndpointName( IpEndpointName::ANY_ADDRESS, PORT ),\n\t\t    &listener );\n\n\t\tstd::cout << \"OSC: Listening for input on port \" << PORT << \"...\\n\";\n\t\ts.Run();\n\t}\n\tcatch (const std::exception &exc) {\n\t\tstd::cerr << \"OSC: \" << exc.what();\n\t}\n\treturn true;\n}\n\nbool Input::InitADC() {\n\tdouble timeout = 0;\n\tclock_t init_start = clock();\n\twhile (!adc_initialized_ && timeout < 5) {\n\t\tif (mcp3004Setup(BASE, SPI_CHAN)) {\n\t\t\tstd::cout << \"ADC: Initialized Sucessfully\" << std::endl;\n\t\t\tadc_initialized_ = true;\n\t\t}\n\t\ttimeout = double(clock() - init_start) / CLOCKS_PER_SEC;\n\t}\n\tif (timeout > 5) {\n\t\tstd::cout << \"ADC: Timed Out.\" << std::endl;\n\t\tadc_initialized_ = false;\n\t}\n\treturn adc_initialized_;\n}\n\nbool Input::StartADCThread(bool run_tests) {\n\t//initialize wiringPi\n\tif (wiringPiSetup() == -1)\n\t{\n\t\tstd::cout << \"Input Error: WiringPi setup failure\" << std::endl;\n\t\treturn false;\n\t}\n\n\tSetupHardwarePins();\n\n\t//run hardware tests (for new units and QA)\n\tif (run_tests) {\n\t\tTestHardwareConfig();\n\t}\n\n\n\t//start input thread\n\tthreadRunning = true;\n\tinputThread = std::thread(&Input::readADC, this);\n\n\t// sched_param sch_params;\n\t// sch_params.sched_priority = 5;\n\t// pthread_setschedparam(inputThread.native_handle(), SCHED_RR, &sch_params);\n\n\n\treturn true;\n}\n\nvoid Input::TestHardwareConfig() { // Hypno Specific\n\t//check initialization\n\tif (USE_ADC == false) {\n\t\tstd::cerr << \"ADC Flag Disabled, Cannot Run Hardware Tests\" << std::endl;\n\t}\n\tif (!adc_initialized_) {\n\t\tInitADC();\n\t}\n\n\tchar user_input;\n\n\t//test LED Connections\n\tstd::cout << \"Testing LED Connections\" << std::endl;\n\n\tsetPotLEDState(0, false );\n\tsetPotLEDState(1, false);\n\n\tstd::cout << \"All LEDs should be OFF\" << std::endl;\n\tstd::cin.ignore();\n\n\tsetPotLEDState(0, true );\n\tsetPotLEDState(1, true );\n\n\tstd::cout << \"Pot LEDs Should be ON\" << std::endl;\n\tstd::cin.ignore();\n\n\tfor (int x = 0; x < RGB_LED_COUNT; ++x) {\n\t\tInput::SetLEDColor(x, glm::vec3(255, 0, 0));\n\t}\n\n\tstd::cout << \"All LEDs Should be lit in RED\" << std::endl;\n\tstd::cin.ignore();\n\n\tfor (int x = 0; x < RGB_LED_COUNT; ++x) {\n\t\tInput::SetLEDColor(x, glm::vec3(0, 255, 0));\n\t}\n\n\tstd::cout << \"All LEDs Should be lit in GREEN\" << std::endl;\n\tstd::cin.ignore();\n\n\tfor (int x = 0; x < RGB_LED_COUNT; ++x) {\n\t\tInput::SetLEDColor(x, glm::vec3(0, 0, 255));\n\t}\n\n\tstd::cout << \"All LEDs Should be lit in BLUE\" << std::endl;\n\tstd::cin.ignore();\n\n\tbool pass = false;\n\tint muxCounter = 0;\n\twhile (muxCounter < 8) {\n\t\twhile (pass == false) {\n\t\t\tint val = AnalogReadMuxedValue(muxCounter, BASE, MUX_ADDRESS_PINA, MUX_ADDRESS_PINB, MUX_ADDRESS_PINC );\n\t\t\tstd::cout << \"Turn pot \" << muxCounter << \" fully CW/UP.\" << \"Current value:\" << val << std::endl;\n\t\t\tif (val == 0) {\n\t\t\t\tpass = true;\n\t\t\t}\n\t\t}\n\t\tpass = false;\n\t\twhile (pass == false) {\n\t\t\tint val = AnalogReadMuxedValue(muxCounter, BASE, MUX_ADDRESS_PINA, MUX_ADDRESS_PINB, MUX_ADDRESS_PINC );\n\t\t\tstd::cout << \"Turn pot \" << muxCounter << \" fully CCW/DOWN.\" << \"Current value:\" << val << std::endl;\n\t\t\tif (val == 1023) {\n\t\t\t\tpass = true;\n\t\t\t}\n\t\t}\n\t\tpass = false;\n\t\t++muxCounter;\n\t}\n\tstd::cout << \"Pot Tests Passed!!!\"  << std::endl;\n\n\tstd::cout << \"Start CV Tests\"  << std::endl;\n\tstd::cout << \"Unplug all CV ins and press enter.\" << std::endl;\n\tstd::cin.ignore();\n\tfor ( int chan = 1; chan < 8 ; chan++) {\n\t\tpass = false;\n\t\twhile (pass == false) {\n\t\t\tint val = analogRead( BASE + chan);\n\t\t\tif (val == 512) {\n\t\t\t\tpass = true;\n\t\t\t}\n\t\t\telse {\n\t\t\t\tstd::cout << \"CV \" << chan << \" : \" << val << std::endl;\n\t\t\t}\n\t\t}\n\t\tstd::cout << \"CV \" << chan << \" Passed!\" << std::endl;\n\t}\n\tstd::cout << \"Unpluged CV Test Passed!\" << std::endl;\n\n\tfor ( int chan = 1; chan < 8 ; chan++) {\n\t\tpass = false;\n\t\twhile (pass == false) {\n\t\t\tint val = analogRead( BASE + chan);\n\t\t\tstd::cout << \"Plug a dummy cable into cv \" << chan << \" Current Value:\" << val << std::endl;\n\t\t\tif (val == 1023) {\n\t\t\t\tpass = true;\n\t\t\t}\n\t\t}\n\t}\n\tstd::cout << \"CV Tests Passed!\"  << std::endl;\n\n\t// std::cin.ignore();\n\tstd::cout << \"All Tests Passed!\"  << std::endl;\n}\n\nvoid Input::SetupHardwarePins() {\n\t//Setup Muxing pins\n\tpinMode (MUX_ADDRESS_PINA, OUTPUT) ;\n\tpinMode (MUX_ADDRESS_PINB, OUTPUT) ;\n\tpinMode (MUX_ADDRESS_PINC, OUTPUT) ;\n\t//Set Pulldowns\n\tpullUpDnControl (MUX_ADDRESS_PINA, PUD_DOWN);\n\tpullUpDnControl (MUX_ADDRESS_PINB, PUD_DOWN);\n\tpullUpDnControl (MUX_ADDRESS_PINC, PUD_DOWN);\n\n\t//Set Up Trigger inputs\n\tpinMode (TRIG_A, INPUT) ;\n\tpullUpDnControl (TRIG_A, PUD_OFF);\n\n\tpinMode (TRIG_B, INPUT) ;\n\tpullUpDnControl (TRIG_B, PUD_OFF);\n\n\t//Create Buttons\n\tbuttons_[0] = std::unique_ptr<Button>(new Button(BUTTON_PIN_0));\n\tbuttons_[1] = std::unique_ptr<Button>(new Button(BUTTON_PIN_1));\n\tbuttons_[2] = std::unique_ptr<Button>(new Button(BUTTON_PIN_2));\n\n\t// pinMode (BUTTON_PIN_0, INPUT) ;\n\t// pinMode (BUTTON_PIN_1, INPUT) ;\n\t// pinMode (BUTTON_PIN_2, INPUT) ;\n\t// //Set Button Pulldowns\n\t// pullUpDnControl (BUTTON_PIN_0, PUD_DOWN);\n\t// pullUpDnControl (BUTTON_PIN_1, PUD_DOWN);\n\t// pullUpDnControl (BUTTON_PIN_2, PUD_DOWN);\n\n\t//Set Led Pins\n\tfor ( int x = 0; x < 3; ++x ) {\n\t\tfor ( int y = 0; y < 3; ++y) {\n\t\t\tif (USE_LED_PWM) {\n\t\t\t\tsoftPwmCreate (LED_PIN[x][y], SOFTPWM_RANGE, SOFTPWM_RANGE );\n\t\t\t}\n\t\t\telse {\n\t\t\t\tpinMode (LED_PIN[x][y], OUTPUT) ;\n\t\t\t\tpullUpDnControl (LED_PIN[x][y], PUD_OFF);\n\t\t\t}\n\n\t\t}\n\t}\n\t//Set Pot Led Pins\n\tif (USE_POT_LED_PWM) {\n\t\tsoftPwmCreate (POT1_LED_PIN, SOFTPWM_RANGE, SOFTPWM_RANGE);\n\t\tsoftPwmCreate (POT3_LED_PIN, SOFTPWM_RANGE, SOFTPWM_RANGE);\n\t}\n\telse {\n\t\tpinMode (POT1_LED_PIN, OUTPUT) ;\n\t\tpullUpDnControl (POT1_LED_PIN, PUD_OFF);\n\t\tpinMode (POT3_LED_PIN, OUTPUT) ;\n\t\tpullUpDnControl (POT3_LED_PIN, PUD_OFF);\n\t}\n\n\t//turn on pot leds\n\tsetPotLEDState(0, true);\n\tsetPotLEDState(1, true);\n}\n\nint Input::AnalogReadMuxedValue(int value_index, int adc_address, int mux_address_pinA, int mux_address_pinB, int mux_address_pinC ) {\n\t// mask out individual bits and set address pins correctly\n\tdigitalWrite(mux_address_pinA, (bool)(value_index & 1));\n\tdigitalWrite(mux_address_pinB, (bool)(value_index & 2));\n\tdigitalWrite(mux_address_pinC, (bool)(value_index & 4));\n\n\treturn analogRead(adc_address);\n}\n\nbool Input::readADC() {\n\n\t//counter for multiplexing ( this should give slightly more priority to sampling CV in theory)\n\tint muxCounter = 0;\n\tsample_begin_ = Util::ProgramTime();\n\n\twhile (threadRunning) {\n\t\t//check ADC initalization\n\t\tif (USE_ADC && !adc_initialized_) {\n\t\t\tInitADC();\n\t\t}\n\n\t\t//main hardware reading routine\n\n\t\tif ( true ) {\n\t\t\t//read mcp3008\n\t\t\tfor ( int chan = 0; chan < 8 ; chan++)\n\t\t\t{\n\t\t\t\t//Read in all the Pots\n\t\t\t\t//Channel 0 is Multiplexed with CD4051BE\n\t\t\t\tif ( chan  == 0 ) {\n\t\t\t\t\twhile (muxCounter <= 7) {\n\t\t\t\t\t\t// go through one of the 8 addresses of the mutliplexer via counter\n\t\t\t\t\t\tint val = AnalogReadMuxedValue(muxCounter, BASE + chan, MUX_ADDRESS_PINA, MUX_ADDRESS_PINB, MUX_ADDRESS_PINC );\n\t\t\t\t\t\tfloat max_val = 1024.0;\n\t\t\t\t\t\tfloat smoothVal = val;\n\n\n\t\t\t\t\t\tstd::cout << \"Pot \" << muxCounter << \" : \" << val << std::endl;\n\n\t\t\t\t\t\tif (SMOOTH_POT) {\n\t\t\t\t\t\t\t// float in_val = truncVal / max_val;\n\t\t\t\t\t\t\t// smoothVal = FilterInput(in_val, &pot_filters_[muxCounter]);\n\n\t\t\t\t\t\t\t//apply running avg after\n\n\t\t\t\t\t\t\tsmoothVal = smooth(smoothVal, lastSmoothPot[muxCounter],  .05, .95 );\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (smoothVal > -1) {\n\t\t\t\t\t\t\tfloat thisVal = (((max_val - smoothVal) / max_val) - 0.017) * 1.017 ;\n\n\n\t\t\t\t\t\t\t//clamping\n\t\t\t\t\t\t\tif (thisVal > 1.) {\n\t\t\t\t\t\t\t\tthisVal = 1.;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\telse if (thisVal < 0) {\n\t\t\t\t\t\t\t\tthisVal = 0.;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\tSetPot(muxCounter, thisVal);\n\n\t\t\t\t\t\t\tlastRawPot[muxCounter] = lastSmoothPot[muxCounter];\n\t\t\t\t\t\t\tlastSmoothPot[muxCounter] = smoothVal;\n\n\t\t\t\t\t\t\tif (DEBUG_PANEL && !DEBUG_CVIN && DEBUG_CV == muxCounter) {\n\t\t\t\t\t\t\t\tstd::cout << \"Pot \" << muxCounter << \" : \" << thisVal << std::endl;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse {\n\t\t\t\t\t\t\t// if (DEBUG_PANEL && !DEBUG_CVIN && DEBUG_CV == muxCounter) {\n\t\t\t\t\t\t\t// \tstd::cout << \"Pot \" << muxCounter << \" : \" << thisVal << std::endl;\n\t\t\t\t\t\t\t// }\n\t\t\t\t\t\t}\n\t\t\t\t\t\t//advance and reset muxcounter\n\t\t\t\t\t\t++muxCounter;\n\t\t\t\t\t}\n\n\t\t\t\t}\n\n\t\t\t\telse {\n\t\t\t\t\t//read in ADC values for CV Modulation\n\t\t\t\t\tint cvNum = chan - 1; //subtracts an index bc 1st chan is used for Pot Mux\n\t\t\t\t\tint val = analogRead( BASE + chan);\n\t\t\t\t\tfloat max_val = 1024.0;\n\t\t\t\t\tfloat smoothVal = val;\n\n\t\t\t\t\tif (SMOOTH_CV) {\n\t\t\t\t\t\t// if (cvNum == 3) {\n\t\t\t\t\t\tsmoothVal = val / max_val;\n\t\t\t\t\t\t// in_val = FilterInput(in_val, &cv_filters_[cvNum] );\n\n\t\t\t\t\t\t//apply running avg after\n\t\t\t\t\t\tsmoothVal = smooth(smoothVal, lastSmoothCV[cvNum],  .018, .97 );\n\t\t\t\t\t}\n\t\t\t\t\tif (smoothVal > -1) {\n\t\t\t\t\t\tfloat cvVal = ((smoothVal)  - .5) * 2. ;\n\t\t\t\t\t\tsetCV(cvNum,  cvVal);\n\n\t\t\t\t\t\tif (DEBUG_PANEL && DEBUG_CVIN && DEBUG_CV == cvNum) {\n\t\t\t\t\t\t\tstd::cout << \"CV \" << cvNum << \" : \" << cvVal << \" Smooth Val: \" << smoothVal << std::endl;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (SMOOTH_CV) {\n\t\t\t\t\t\t\tlastRawCV[cvNum] = lastSmoothCV[cvNum];\n\t\t\t\t\t\t\tlastSmoothCV[cvNum] = smoothVal;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tif (muxCounter > 7) { muxCounter = 0;} //reset mux counter\n\n\t\t\tsample_end_ = Util::ProgramTime();\n\t\t\tfloat frame_time = ( sample_end_ - sample_begin_) / 100.; //in seconds\n\t\t\tsample_begin_ = sample_end_; //set this time as the beginning of the next frame\n\n\t\t\tlast_sample_time_ = frame_time;\n\n\t\t\tif (SHOW_SAMPLETIME) {\n\t\t\t\tstd::cout << \"ADC Sample Time: \" << last_sample_time_ << std::endl;\n\t\t\t}\n\n\t\t\tfloat sample_time_difference = .001 - last_sample_time_ ; //100Hz lock\n\n\t\t\t// std::cout<< \"Sample Time Difference: \" << sample_time_difference <<std::endl;\n\t\t\tusleep(sample_time_difference * 1000000);\n\t\t\t// std::this_thread::sleep_for(std::chrono::milliseconds(200));\n\n\t\t}\n\n\t\tReadButtons();\n\t\tReadTriggers();\n\n\t}\n\n\n\n\treturn true;\n}\n\n\nvoid Input::ReadTriggers() {\n\tint readA = !digitalRead(TRIG_A);\n\tint readB = !digitalRead(TRIG_B);\n\tbool changed = false;\n\n\t// std::cout<< readA <<std::endl;\n\n\n\t//rising edge\n\tif (readA == 1 && readA != last_trig_readA_) {\n\t\tsetLEDState(0, buttons_[0]->ToggleState());\n\t\tchanged = true;\n\t\tif (onButton) {\n\t\t\tonButton(0, buttons_[0]->GetState());\n\t\t}\n\t}\n\tlast_trig_readA_ = readA;\n\n\tif (readB == 1 && readB != last_trig_readB_) {\n\t\tsetLEDState(2, buttons_[2]->ToggleState());\n\t\tchanged = true;\n\t\tif (onButton) {\n\t\t\tonButton(1, buttons_[2]->GetState());\n\t\t}\n\t}\n\n\tlast_trig_readB_ = readB;\n}\n\nvoid Input::ToggleButton(int index) {\n\tsetLEDState(index, buttons_[index]->ToggleState() );\n\tif (onButton) {\n\t\tonButton(index, buttons_[0]->GetState());\n\t}\n}\n\n//Serial input - from arduino\n\n//reads serial inputs from Arduino, make sure to setupSerial() before calling this function\nbool Input::readSerial() {\n\n\twhile (threadRunning) {\n\t\tchar buff[0x1000];\n\t\tssize_t rd = read(serialFd, buff, 100);\n\t\tif (rd != 0) {\n\t\t\tif (strchr(buff, '\\n') != NULL) {\n\t\t\t\tchar* tok;\n\n\t\t\t\tint index = -1;\n\t\t\t\ttok = strtok(buff, \" \");\n\t\t\t\tif (tok != NULL) {\n\n\t\t\t\t\tindex = atoi(tok);\n\t\t\t\t\t//std::cout<< \"Index: \"<< index <<std::endl;\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\t//~ return false;\n\t\t\t\t}\n\t\t\t\ttok = strtok(NULL, \"\\n\");\n\n\t\t\t\tif (tok != NULL) {\n\t\t\t\t\tif (index == 10) {\n\t\t\t\t\t\t//printf(\"Value: %s\\n\", tok);\n\t\t\t\t\t}\n\t\t\t\t\tint val = atoi(tok);\n\t\t\t\t\tif (val < 0) {\n\t\t\t\t\t\tval = 0;\n\t\t\t\t\t}\n\t\t\t\t\telse if (val > 1024) {\n\t\t\t\t\t\tval = 1024;\n\t\t\t\t\t}\n\n\t\t\t\t\tif (index >= 10 && index < 30) { //cv input\n\n\t\t\t\t\t\tsetCV(index - 10, val / 1024.0);\n\t\t\t\t\t}\n\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t}\n\t}\n\n\treturn true;\n}\n\nbool Input::setupSerial() {\n\tconst char *dev = \"/dev/ttyUSB0\";\n\n\tserialFd = open(dev, O_RDWR | O_NOCTTY | O_NDELAY | O_NONBLOCK);\n\tfcntl(serialFd, F_SETFL, 0);\n\tif (serialFd == -1) {\n\t\tfprintf(stderr, \"Cannot open %s: %s.\\n\", dev, strerror(errno));\n\t\treturn false;\n\t}\n\n\tthreadRunning = true;\n\tinputThread = std::thread(&Input::readSerial, this);\n\n\treturn true;\n}\n\nvoid Input::SetPot(int index, float val, bool ext_control_change) {\n\tif (index >= POT_COUNT || index < 0) {\n\t\treturn;\n\t}\n\t// std::cout << \"index \" << index << \" \" << val << std::endl;\n\t// std::cout << ext_control_change << std::endl;\n\tif (input_mutex_.try_lock()) {\n\t\tpotIn[index] = val;\n\t\tinput_mutex_.unlock();\n\t\t//\n\n\t\tbool alt_change = false;\n\t\tbool alt_held = false;\n\t\tfloat ALT_ACTIVATION_MARGIN = .025; //for alt-pot deadzone\n\n\t\tif ( !ext_control_change && mod_menu_index_ != -1) {\n\t\t\t//activate alt-pot when pot has moved past a deadzone\n\t\t\tif (!alt_pot_active_[mod_menu_index_][index] && abs(last_pot_[index] - val) > ALT_ACTIVATION_MARGIN ) {\n\t\t\t\talt_pot_active_[mod_menu_index_][index] = true;\n\n\t\t\t\t//led position indicator off when alt_pot is active\n\t\t\t\tif (index == 0 || index == 3) {\n\t\t\t\t\tint led_index = 0;\n\t\t\t\t\tif (index == 3) {\n\t\t\t\t\t\tled_index = 1;\n\t\t\t\t\t}\n\t\t\t\t\t//turn off Pot LED since alt pot is active\n\t\t\t\t\tsetPotLEDState(led_index, false);\n\t\t\t\t}\n\t\t\t}\n\t\t\t// \t\t\t//only make alt value change on an active alt-pot\n\t\t\tif (alt_pot_active_[mod_menu_index_][index]) {\n\t\t\t\tif (input_mutex_.try_lock()) {\n\t\t\t\t\talt_pot_[mod_menu_index_][index] = val;\n\t\t\t\t\tinput_mutex_.unlock();\n\t\t\t\t\tif (onAltPot)  { //this should only change when a pot is moved significantly\n\t\t\t\t\t\tonAltPot(mod_menu_index_, index, val);\n\t\t\t\t\t}\n\t\t\t\t\talt_change = true;\n\n\t\t\t\t\tlast_alt_pot_[index] = val;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\telse { //deactivate all alt-pots\n\t\t\tif (!ext_control_change) {\n\t\t\t\tfor (int button_index = 0; button_index < BUTTON_COUNT; ++button_index) {\n\t\t\t\t\tif (alt_pot_active_[button_index][index]) {\n\t\t\t\t\t\talt_pot_active_[button_index][index] = false;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tif (onCV) {\n\t\t\t\t// std::cout<< index << \": P: \" << val << \" CV: \" <<  getCV(index) <<std::endl;\n\t\t\t\tfloat RETURN_ACTIVATION_MARGIN = .08; //for alt-pot deadzone return\n\t\t\t\tfloat RETURN_CATCH_MARGIN = .035; //for color/gain deadzone catch\n\n\t\t\t\tbool RETURN_CATCH = false;\n\t\t\t\tif (index == 3 || index == 1) { // catch knob for gain and color\n\t\t\t\t\tRETURN_CATCH = true;\n\t\t\t\t\t// std::cout << \"RETURN DISTANCE [\" << index<< \"] \" << last_pot_[index]<< \" - \" <<  val  << \" = \" << (float)abs(last_pot_[index] - val) << \": \"<< (abs(last_pot_[index] - val) < RETURN_CATCH_MARGIN) << std::endl;\n\t\t\t\t}\n\n\n\t\t\t\tbool real_position = false;\n\t\t\t\t//Pickup for Controls: snaps into position after return activation margin is crossed\n\t\t\t\t//this change should only be valid if the new position is within pickup margin of control\n\t\t\t\tif (!RETURN_CATCH && ( abs(last_alt_pot_[index] - val) > RETURN_ACTIVATION_MARGIN || (last_pot_[index] < 0.0 || last_alt_pot_[index] < 0.0)  ) ) {\n\t\t\t\t\tonCV(index, getCV(index) +  val);\n\n\t\t\t\t\t// if (index == DEBUG_CV) {\n\t\t\t\t\t// \tstd::cout << \"INDEX: \" << index << \"VALUE: \" << val << \" CV: \" << getCV(index) << std::endl;\n\t\t\t\t\t// }\n\t\t\t\t\t//capture previous VALID regular pot\n\t\t\t\t\tlast_pot_[index] = val;\n\t\t\t\t\tlast_alt_pot_[index] = -1.0; //disable alt-pot\n\n\t\t\t\t\treal_position = true;\n\t\t\t\t}\n\t\t\t\t// Catching Pots (for sensitive controls such as gain and color)\n\t\t\t\telse if (RETURN_CATCH && abs(last_pot_[index] - val) < RETURN_CATCH_MARGIN || (last_pot_[index] < 0.0 || last_alt_pot_[index] < 0.0) ) {\n\n\t\t\t\t\tonCV(index, getCV(index) + val);\n\n\t\t\t\t\tlast_pot_[index] = val;\n\t\t\t\t\tlast_alt_pot_[index] = -1.0; //disable alt-pot\n\n\t\t\t\t\treal_position = true;\n\t\t\t\t}\n\n\t\t\t\t//led position indicator (only for the sliders with LEDs (0 & 3) )\n\t\t\t\tif (index == 0 || index == 2) {\n\t\t\t\t\tint led_index = 0;\n\t\t\t\t\tif (index == 3) {\n\t\t\t\t\t\tled_index = 1;\n\t\t\t\t\t}\n\t\t\t\t\t//light pot led\n\t\t\t\t\tsetPotLEDState(led_index, real_position);\n\t\t\t\t}\n\n\n\t\t\t}\n\n\t\t}\n\t}\n\n}\n\nint Input::GetCVCount() {\n\treturn CV_COUNT;\n}\n\nint Input::GetButtonCount() {\n\treturn BUTTON_COUNT;\n}\n\nint Input::GetPotCount() {\n\treturn POT_COUNT;\n}\n\nfloat Input::getPot(int index) {\n\tfloat ret = 0.0;\n\tif (index < POT_COUNT) {\n\t\t// Input::inputMutex.lock();\n\t\tret = potIn[index];\n\t\t// Input::inputMutex.unlock();\n\t}\n\treturn ret;\n}\n\nfloat Input::GetAltPot(int button_index, int pot_index) {\n\tfloat ret = 0.0;\n\n\tif (button_index < BUTTON_COUNT && pot_index < POT_COUNT) {\n\t\tinput_mutex_.lock();\n\t\tret = alt_pot_[button_index][pot_index];\n\t\tinput_mutex_.unlock();\n\t}\n\n\treturn ret;\n}\n\nvoid Input::SetAltPot(int button_index, int pot_index, float value) {\n\tif (button_index < BUTTON_COUNT && pot_index < POT_COUNT) {\n\t\tif (value < 0.) {\n\t\t\tif ( (button_index == 2 && pot_index == 2) || (button_index == 0 && pot_index == 6) || (button_index == 2 && pot_index == 7) ) {\n\t\t\t\tvalue = .5;\n\t\t\t}\n\t\t\telse {\n\t\t\t\tvalue = 0.;\n\t\t\t}\n\t\t}\n\n\t\tinput_mutex_.lock();\n\t\talt_pot_[button_index][pot_index] = value;\n\t\tinput_mutex_.unlock();\n\n\t\tif (onAltPot)  { //this should only change when a pot is moved significantly\n\t\t\tonAltPot(button_index, pot_index, value);\n\t\t}\n\t}\n}\n\nbool Input::SetModMatrixValue(int x, int y, float value) {\n\tbutton_mod_matrix_[x][y] = value ;\n\n\tif (onModMatrix) {\n\t\tonModMatrix(button_mod_matrix_);\n\t}\n\tif (onModMatrixValue) {\n\t\tonModMatrixValue(x, y,  value);\n\t}\n\n\treturn true;\n}\n\n\nvoid Input::setCV(int index, float val) {\n\tif (index == 1) {\n\t\tindex = 3;\n\t}\n\telse if (index >= 3) {\n\t\tindex += 1;\n\t}\n\n\t//read\n\tclock_t readtime = clock();\n\t// inputMutex.lock();\n\tcvIn[index] = val;\n\tlastCV[index].push_back(val);\n\tlastCV[index].erase(lastCV[index].begin());\n\t// inputMutex.unlock();\n\t//save time when the read was performed\n\tlastCVRead[index] = (float) readtime / (CLOCKS_PER_SEC);\n\n\tif (onCV) {\n\t\tonCV(index, getPot(index) +  val);\n\t}\n}\n\nfloat Input::getCV(int i) {\n\tfloat ret = 0.0;\n\tif (i < CV_COUNT) {\n\t\t// Input::inputMutex.lock();\n\t\tif (!LZX_MODE) {\n\t\t\tret = cvIn[i];\n\t\t}\n\t\telse {\n\t\t\tret = cvIn[i] * 5.;\n\t\t}\n\t\t// Input::inputMutex.unlock();\n\t}\n\treturn ret;\n}\n\n\n\nstd::vector<float> Input::getCVList(int index) {\n\tstd::vector<float> ret;\n\t// Input::inputMutex.lock();\n\tret = std::vector<float>(lastCV[index]);\n\t// Input::inputMutex.unlock();\n\treturn ret;\n}\n\n// float Input::FilterInput(float in_val, BiquadChain* filter) { // simply applies filter designed in the contructor (dont forget to change the wonky gain)\n// \tfloat output;\n// \tint nItems = 1;\n// \tfilter->processBiquad(&in_val, &output, 1, nItems, &coeffs_[0]);\n// \toutput = output / 26.748586653; //5.4;//second order\n// \t// if (cvNum == 3) {\n// \t// \tstd::cout << \"Filter Output: \" << output << \" OG Smoothing: \" << in_val <<  std::endl;\n// \t// }\n// \toutput = (std::trunc(output * 1000.) / 1000.0);\n// \treturn output;\n// }\n\nfloat Input::smooth(float in, float PrevSmoothVal, float deadzone_percent, double weight ) {\n\t//truncate in val 4 decimal places\n\tin = std::trunc(1000 * in) / 1000;\n\n\tfloat this_margin = PrevSmoothVal * deadzone_percent ; // .025//* 0.01; //  get 2% of the raw value.  Tune for lowest non-jitter value.\n\n\t/*\n\t * Next we add (or subtract...) the 'standard' fixed value to the previous reading. (PotPrevVal needs to be declared outside the function so it persists.)\n\t * Here's the twist: Since the jitter seems to be worse at high raw vals, we also add/subtract the 2% of total raw. Insignificantat on low\n\t * raw vals, but enough to remove the jitter at raw >900 without wrecking linearity or adding 'lag', or slowing down the loop, etc.\n\t */\n\t//deadzone creates a bigger zone where values are considered invalid, tune for lowest non-jitter value\n\tif (PrevSmoothVal != in) { //if its thesame value just ignore it\n\t\tif (in > PrevSmoothVal + (this_margin) || in < PrevSmoothVal - (this_margin)) { // a 'real' change in value? Tune the two numeric values for best results\n\n\t\t\t//average last 2 values ofr smoothing\n\t\t\tin = (PrevSmoothVal * weight) + (in * (1.0 - weight)) ;//- this_margin;\n\n\t\t\treturn in;\n\t\t}\n\t\telse {\n\t\t\t// in = ( PrevRawVal * weight) + (PrevSmoothVal * (1.0 - weight));\n\n\t\t\t// return in;\n\t\t}\n\t}\n\treturn -1;\n}\n\n\nvoid Input::ResetButtonLED() {\n\tfor (int y = 0; y < BUTTON_COUNT; ++y) {\n\t\tsetLEDState(y, buttons_[y]->GetState());\n\t}\n}\n\nvoid Input::SetButtonState(int index, int state) {\n\tbuttons_[index]->SetState(state);\n\tsetLEDState(index, state);\n}\n\n\nvoid Input::ReadButtons() { //assumes 3 buttons/RGB LEDs\n\tbool signal_change = false;\n\tbool buttons_states_changed = false;\n\n\t//Update All the buttons\n\tfor (int x = 0; x < BUTTON_COUNT; ++x) {\n\t\tButtonEvent event = buttons_[x]->Update();\n\t\tif (event != last_button_event_[x]) {\n\t\t\tbuttons_states_changed = true;\n\t\t}\n\t\tlast_button_event_[x] = event;\n\t}\n\n\tButtonEvent event0 = last_button_event_[0];\n\tButtonEvent event1 = last_button_event_[1];\n\tButtonEvent event2 = last_button_event_[2];\n\n\t// DISPLAY CONTROL (menu leds)\n\tint held_count =  buttons_[0]->IsHeld() + buttons_[1]->IsHeld() + buttons_[2]->IsHeld();\n\n\tif (held_count == 1) {\n\t\tDisplayModMenu();\n\t}\n\telse if (held_count == 2) {\n\t\tDisplayPresetMenu();\n\t}\n\telse if (held_count == 3) { //Init Patch Button Combo\n\t\t//light up LED timer UI\n\t\tDisplayInitTimer();\n\t\tbuttons_states_changed = true;\n\t}\n\telse {\n\t\tResetButtonLED();\n\t}\n\n\t// else if (event0 != ButtonEvent::DOWN && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::DOWN) {\n\t// \tResetButtonLED();\n\t// }\n\n\t// if (event0 == ButtonEvent::DOWN && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::DOWN) {\n\t// \tbuttons_states_changed = true; // this overrride allows the loop to time while the init combo is pressed\n\t// }\n\n\tif (buttons_states_changed) { //only do this if the state changed in some way from last frame\n\t\t//check button states\n\n\n\t\t//This is basically a lookup table for all button menu states\n\n\t\t//NO EVENTS\n\t\tif (event0 == ButtonEvent::NONE && event1 == ButtonEvent::NONE && event2 == ButtonEvent::NONE) {\n\t\t\t//nothing happens reset all LEDs\n\t\t\tif (mod_menu_index_ != -1) {\n\t\t\t\tmod_menu_index_ = -1;\n\t\t\t\tpreset_menu_index_ = -1;\n\t\t\t\tinit_hold_time_ = -1.;\n\t\t\t\tResetButtonLED();\n\t\t\t}\n\t\t}\n\t\telse { //something is changed\n\t\t\tsignal_change = true; //make sure to message a state change later\n\n\t\t\t//mod menu display comes up only if you hold the button, otherwise macros are instant\n\n\t\t\t//simple UP events to switch mode\n\t\t\tif (event0 == ButtonEvent::UP && event1 == ButtonEvent::NONE && event2 == ButtonEvent::NONE) {\n\t\t\t\tsetLEDState(0, buttons_[0]->ToggleState());\n\t\t\t\tif (onButton) {\n\t\t\t\t\tonButton(0, buttons_[0]->GetState());\n\t\t\t\t}\n\t\t\t}\n\n\t\t\telse if (event0 == ButtonEvent::NONE && event1 == ButtonEvent::UP && event2 == ButtonEvent::NONE) {\n\t\t\t\tsetLEDState(1, buttons_[1]->ToggleState());\n\t\t\t\tif (onButton) {\n\t\t\t\t\tonButton(1, buttons_[1]->GetState());\n\t\t\t\t}\n\t\t\t}\n\t\t\telse if (event0 == ButtonEvent::NONE && event1 == ButtonEvent::NONE && event2 == ButtonEvent::UP) {\n\t\t\t\tsetLEDState(2, buttons_[2]->ToggleState());\n\t\t\t\tif (onButton) {\n\t\t\t\t\tonButton(2, buttons_[2]->GetState());\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t//mod menus\n\t\t\telse if ( event0 == ButtonEvent::DOWN && event1 == ButtonEvent::NONE && event2 == ButtonEvent::NONE ) {\n\t\t\t\t// mod menu index 1;\n\t\t\t\tEnterModMenu(0);\n\t\t\t}\n\t\t\telse if ( event0 == ButtonEvent::NONE && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::NONE ) {\n\t\t\t\t// mod menu index 1;\n\t\t\t\tEnterModMenu(1);\n\t\t\t}\n\t\t\telse if ( event0 == ButtonEvent::NONE && event1 == ButtonEvent::NONE && event2 == ButtonEvent::DOWN ) {\n\t\t\t\t// mod menu index 1;\n\t\t\t\tEnterModMenu(2);\n\t\t\t}\n\n\t\t\t//Preset menu 0\n\t\t\telse if ( event0 == ButtonEvent::NONE && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::DOWN ) {\n\t\t\t\tEnterPresetMenu(0);\n\t\t\t}\n\t\t\t//Preset menu 1\n\t\t\telse if ( event0 == ButtonEvent::DOWN && event1 == ButtonEvent::NONE && event2 == ButtonEvent::DOWN ) {\n\t\t\t\tEnterPresetMenu(1);\n\t\t\t}\n\t\t\t//Preset menu 2\n\t\t\telse if ( event0 == ButtonEvent::DOWN && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::NONE ) {\n\t\t\t\tEnterPresetMenu(2);\n\t\t\t}\n\n\t\t\t//1st mod menu\n\t\t\telse if ( event0 == ButtonEvent::DOWN && event1 == ButtonEvent::UP && event2 == ButtonEvent::NONE ) {\n\t\t\t\tInput::ToggleModMenu(0, 1);\n\t\t\t}\n\n\t\t\telse if ( event0 == ButtonEvent::DOWN && event1 == ButtonEvent::NONE && event2 == ButtonEvent::UP ) {\n\t\t\t\tInput::ToggleModMenu(0, 2);\n\t\t\t}\n\t\t\t//2nd mod menu\n\t\t\telse if ( event0 == ButtonEvent::UP && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::NONE ) {\n\t\t\t\tInput::ToggleModMenu(1, 0);\n\t\t\t}\n\t\t\telse if ( event0 == ButtonEvent::NONE && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::UP) {\n\t\t\t\tInput::ToggleModMenu(1, 2);\n\t\t\t}\n\t\t\t//3rd mod menu\n\t\t\telse if ( event0 == ButtonEvent::UP && event1 == ButtonEvent::NONE && event2 == ButtonEvent::DOWN ) {\n\t\t\t\tInput::ToggleModMenu(2, 0);\n\t\t\t}\n\t\t\telse if ( event0 == ButtonEvent::NONE && event1 == ButtonEvent::UP && event2 == ButtonEvent::DOWN) {\n\t\t\t\tInput::ToggleModMenu(2, 1);\n\t\t\t}\n\n\t\t\t//preset menu conditions\n\t\t\telse if ( event0 == ButtonEvent::UP && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::DOWN ) {\n\t\t\t\tTogglePresetMenu(0);\n\t\t\t}\n\n\t\t\telse if ( event0 == ButtonEvent::DOWN && event1 == ButtonEvent::UP && event2 == ButtonEvent::DOWN ) {\n\t\t\t\tTogglePresetMenu(1);\n\t\t\t}\n\n\n\t\t\telse if ( event0 == ButtonEvent::DOWN && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::UP ) {\n\t\t\t\tTogglePresetMenu(2);\n\t\t\t}\n\n\t\t\t// Clear/Init Patch ( May need a time delay here )\n\t\t\telse if ( event0 == ButtonEvent::DOWN  && event1 == ButtonEvent::DOWN && event2 == ButtonEvent::DOWN ) {\n\t\t\t\t// if(buttons_[0]->IsHeld() && buttons_[1]->IsHeld() && buttons_[2]->IsHeld()){\n\t\t\t\tif (init_hold_time_ == -1.) {\n\t\t\t\t\tinit_hold_time_ = Util::TimeInSeconds();\n\t\t\t\t\t// std::cout << \"start hold init\" << std::endl;\n\t\t\t\t}\n\t\t\t\telse if (init_hold_time_ > 0.) {\n\n\t\t\t\t\tint this_hold_time = Util::TimeInSeconds() - init_hold_time_;\n\n\t\t\t\t\tif (this_hold_time >= INIT_HOLD_TIME) {\n\t\t\t\t\t\tif (onPresetHold) {\n\t\t\t\t\t\t\tonPresetHold(preset_menu_index_);\n\t\t\t\t\t\t}\n\t\t\t\t\t\tinit_hold_time_ = -2.;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\n\n\t\t\t\t// }\n\t\t\t}\n\n\n\t\t}\n\t}\n}\n\nvoid Input::EnterModMenu(int index) {\n\tpreset_menu_index_ = -1;\n\tmod_menu_index_ = index;\n\tinit_hold_time_ = -1.;\n}\n\nvoid Input::DisplayModMenu() {\n\tfor (int x = 0; x < RGB_LED_COUNT; ++x) {\n\t\tif (x == mod_menu_index_) {\n\t\t\tSetLEDColor(x, glm::vec3( 1.0 ));\n\t\t}\n\t\telse {\n\t\t\tsetLEDState(x, button_mod_matrix_[mod_menu_index_][x]);\n\t\t}\n\t}\n}\n\nvoid Input::EnterPresetMenu(int index) {\n\tmod_menu_index_ = -1;\n\tpreset_menu_index_ = index;\n\tinit_hold_time_ = -1.;\n}\n\nvoid Input::DisplayPresetMenu() {\n\t//index represents led not held in preset menu (the other 2 buttons are held)\n\t//Set all held leds to white\n\t// std::cout << \"Displaying Preset Menu: \" << preset_menu_index_ << std::endl;\n\tfor (int x = 0; x < RGB_LED_COUNT; ++x) {\n\t\tif (x == preset_menu_index_) {\n\t\t\tfloat this_preset_setting = preset_menu_[preset_menu_index_];\n\t\t\tif (this_preset_setting == 1.0) { //has preset saved\n\t\t\t\tSetLEDColor(x, glm::vec3(0., 1., 0.), false );\n\t\t\t}\n\t\t\telse {\n\t\t\t\tSetLEDColor(x, glm::vec3(1., 0., 0.), false );\n\t\t\t}\n\t\t}\n\t\telse {\n\t\t\tSetLEDColor(x, glm::vec3( 1.0 ));\n\t\t}\n\t}\n}\n\nvoid Input::DisplayInitTimer() {\n\tfloat this_hold_time = Util::TimeInSeconds() - init_hold_time_;\n\tif (this_hold_time <= INIT_HOLD_TIME ) {\n\t\tint leds_lit = (int)this_hold_time % ( (INIT_HOLD_TIME ) ) + 1;\n\t\t// std::cout << leds_lit << std::endl;\n\t\tif (leds_lit < 4) {\n\t\t\tSetLEDColor(0, glm::vec3(leds_lit) );\n\t\t\tSetLEDColor(1, glm::vec3(leds_lit - 1.) );\n\t\t\tSetLEDColor(2, glm::vec3(leds_lit - 2.) );\n\t\t}\n\t\telse {\n\t\t\tSetLEDColor(0, glm::vec3(1., 1., 0.) );\n\t\t\tSetLEDColor(1, glm::vec3(1., 1., 0.) );\n\t\t\tSetLEDColor(2, glm::vec3(1., 1., 0.) );\n\t\t}\n\t}\n\telse {\n\t\t//all green indicates success full save\n\t\tSetLEDColor(0, glm::vec3(0., 1., 0.) );\n\t\tSetLEDColor(1, glm::vec3(0., 1., 0.) );\n\t\tSetLEDColor(2, glm::vec3(0., 1., 0.) );\n\t}\n}\n\n\n\nvoid Input::ToggleModMenu(int mod_menu_index, int mod_destination_index ) {\n\tbutton_mod_matrix_[mod_menu_index][mod_destination_index] += 1;\n\tif (button_mod_matrix_[mod_menu_index][mod_destination_index] > 1) {\n\t\tbutton_mod_matrix_[mod_menu_index][mod_destination_index] = 0;\n\t}\n\t// std::cout<< \"TOGGLED\" << std::endl;\n\tDisplayModMenu();\n\t// setLEDState(mod_destination_index, button_mod_matrix_[mod_menu_index][mod_destination_index]);\n\n\tif (onModMatrix) {\n\t\tonModMatrix(button_mod_matrix_);\n\t}\n\n\tif (onModMatrixValue) {\n\t\tonModMatrixValue(mod_menu_index, mod_destination_index,  button_mod_matrix_[mod_menu_index][mod_destination_index]);\n\t}\n}\n\nvoid Input::TogglePresetMenu(int index) {\n\t// std::cout<< \"Toggled Preset Menu: \" << index << std::endl;\n\tif (index < 3) {\n\t\tif (preset_menu_[index] == 0.0) {\n\t\t\tpreset_menu_[index] = 1.0;\n\t\t}\n\t\telse if (preset_menu_[index] == 1.0) {\n\t\t\tpreset_menu_[index] = 0.0;\n\t\t}\n\n\t\tif (onPresetToggle) {\n\t\t\tonPresetToggle(index);\n\t\t}\n\t}\n}\n\nbool Input::ToggleLZXMode() {\n\tLZX_MODE = !LZX_MODE;\n\treturn LZX_MODE;\n}\n\n\nbool Input::IsButtonHeld(int index) {\n\treturn buttons_[index]->IsHeld();\n}\n\nvoid Input::setLEDState(int index, int state) {\n\tif (index < RGB_LED_COUNT) {\n\t\tsetLEDState(LED_PIN[index][0], LED_PIN[index][1], LED_PIN[index][2], state);\n\t}\n}\n\nvoid Input::setLEDState(int pinR, int pinG, int pinB, int state) {\n\tstate += 1;\n\tsetLEDState(pinR, pinG, pinB, glm::vec3((float)(bool)(state & 1), (float)(bool)(state & 2), (float)(bool)(state & 4)) );\n}\n\nvoid Input::setLEDState(int pinR, int pinG, int pinB, glm::vec3 c) {\n\t// std::cout <<\"Set LED color: \" << c.r << \" , \" << c.g << \" , \" << c.b << std::endl;\n\n\t//dim leds\n\t// float clip = 0.25;\n\t// if( c.r > clip ) c.r = clip;\n\t// if( c.g > clip ) c.g = clip;\n\t// if( c.b > clip ) c.b = clip;\n\tc /= 4.; //dim leds\n\n\t//intensity is reversed due to hardware wiring (LED with common Anode)\n\n\n\tif (USE_LED_PWM) {\n\t\tc.r = 1.0 - c.r;\n\t\tc.g = 1.0 - c.g;\n\t\tc.b = 1.0 - c.b;\n\n\t\tsoftPwmWrite (pinR, c.r * SOFTPWM_RANGE);\n\t\tsoftPwmWrite (pinG, c.g * SOFTPWM_RANGE);\n\t\tsoftPwmWrite (pinB, c.b * SOFTPWM_RANGE);\n\t}\n\telse {\n\t\tdigitalWrite(pinR, ! (c.r > 0) );\n\t\tdigitalWrite(pinG, ! (c.g > 0));\n\t\tdigitalWrite(pinB, ! (c.b > 0));\n\t}\n}\n\nvoid Input::SetLEDColor(int index, glm::vec3 color, bool freeze) {\n\tif (index < RGB_LED_COUNT) {\n\t\tcolor = (color * glm::vec3(.8)); //exagerate color on LEDs\n\t\tsetLEDState(LED_PIN[index][0], LED_PIN[index][1], LED_PIN[index][2], color);\n\n\t\t//TODO: Implement UI going back to button states after a set freeze time ( Currently not in use )\n\t\tif (freeze) {\n\t\t\t//freeze LED readout for duration\n\t\t\tled_freeze_time_[index] = (float) clock() / (CLOCKS_PER_SEC);\n\t\t}\n\t}\n}\n\nvoid Input::setPotLEDState(int index, bool state ) {\n\tif (index == 0) {\n\t\tdigitalWrite(POT1_LED_PIN, state);\n\t}\n\telse {\n\t\tdigitalWrite(POT3_LED_PIN, state);\n\t}\n}\nvoid Input::setPotLEDState(int index, float intensity ) {\n\tif (USE_POT_LED_PWM) {\n\t\tif (index == 0) {\n\t\t\tsoftPwmWrite(POT1_LED_PIN, intensity * SOFTPWM_RANGE);\n\t\t}\n\t\telse {\n\t\t\tsoftPwmWrite(POT3_LED_PIN, intensity * SOFTPWM_RANGE);\n\t\t}\n\t}\n\telse {\n\t\t//not supported\n\t}\n}\n\n\n#endif\n",
+			"file": "src/input.cpp",
+			"file_size": 36152,
+			"file_write_time": 132202355407841531,
+			"settings":
+			{
+				"buffer_size": 36094,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/input.h",
+			"settings":
+			{
+				"buffer_size": 728,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/osc/oscSender.h",
+			"settings":
+			{
+				"buffer_size": 1643,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"SFTP",
+				"SFTP: Browse Server…"
+			],
+			[
+				"setup",
+				"SFTP: Setup Server…"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remote",
+				"Remote Edit: Open Remote File Prompt"
+			],
+			[
+				"settings",
+				"Preferences: RemoteEdit Settings"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 123.0,
+		"history":
+		[
+			"ssh ",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ronaldsardarian/Documents/git/womens-labor/RaspberryPi",
+		"/Users/ronaldsardarian/Documents/git/womens-labor/RaspberryPi/lib",
+		"/Users/ronaldsardarian/Documents/git/womens-labor/RaspberryPi/src"
+	],
+	"file_history":
+	[
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/server/public/scripts/gl-matrix.js",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/server/scripts/main.js",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/io/ndi.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Patch.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Patch.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/install.sh",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/server/index.html",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/sftp-config.json",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/server/main.js",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Makefile",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/server/StartWebserver.sh",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/LaunchVidos.sh",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/hardware/button.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/hardware/button.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/ZoomingRotatingFeedback.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/io/ndi.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/HyperDigitalFeedback.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/SpirographFeedback.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/ZoomingFeedback.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/util.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/cube.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/io/midi.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/io/midi.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/square.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/fbm.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/UVUtil.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/graphics/Shader.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/graphics/Shader.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Layer.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Layer.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/Feedback.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/io/FileWatcher.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/io/FileWatcher.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Shader.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/Pixelate.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/Mixer.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/MirrorUV.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/tan.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/sin.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/Processing.NDI.Recv.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/examples/SimpleSend.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Shader.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/Mirror.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/io/oscListener.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/input.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/input.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/ip/UdpSocket.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/ip/posix/UdpSocket.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/ip/NetworkingUtils.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/osc/OscPacketListener.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/ip/PacketListener.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/osc/OscOutboundPacketStream.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/io/oscSender.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/osc/OscPrintReceivedElements.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/ip/posix/NetworkingUtils.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/examples/OscDump.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/oscpack/examples/SimpleReceive.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/Processing.NDI.Find.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/Processing.NDI.Lib.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/Processing.NDI.Recv.ex.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/gl.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/rtmidi/RtMidi.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/Shaders/myShader0.frag",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/button.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/button.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/rtmidi/tests/Makefile.am",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/rtmidi/tests/cmidiin.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/rtmidi/tests/midiin",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/dsp/Biquad.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/dsp/Biquad.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/dsp/Butterworth.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/dsp/Butterworth.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/dsp/main.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/dsp/Butterworth.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/dsp/Butterworth.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/main.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Filter.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Filter.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/util.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/audio.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/fileWatcher.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/fileWatcher.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/os/vidos.service",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Frame.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Frame.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Framebuffer.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/src/Framebuffer.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/examples/C++/NDIlib_Send_Video_and_Audio/NDIlib_Send_Video_and_Audio.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/examples/C++/NDIlib_Send_VirtualPTZ/NDIlib_Send_VirtualPTZ.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/examples/C++/NDIlib_Send_Video_Advanced/NDIlib_Send_Video_Advanced.cpp",
+		"/Library/NewTek NDI SDK/examples/C++/NDIlib_Send_Video_and_Audio/NDIlib_Send_Video_and_Audio.cpp",
+		"/Library/NewTek NDI SDK/examples/C++/NDIlib_Recv/NDIlib_Recv.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/Processing.NDI.structs.h",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/examples/C++/NDIlib_Recv/NDIlib_Recv.cpp",
+		"/Users/ronaldsardarian/Documents/Sleepy Circuits/Hypno/VIDOS/lib/ndi/examples/C++/NDIlib_Recv_FrameSync/NDIlib_Recv_FrameSync.cpp",
+		"/Users/ronaldsardarian/Documents/git/Squarespace Sites/PHLMAR/template/styles/tweak.less",
+		"/Users/ronaldsardarian/Documents/git/Squarespace Sites/PHLMAR/template/site.region",
+		"/Users/ronaldsardarian/Documents/git/Squarespace Sites/PHLMAR/template/sftp-config.json",
+		"/Users/ronaldsardarian/Documents/git/VIDOS/src/sftp-config.json",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557547816/Hypno/home/pi/VIDOS/Shaders/myShader0.frag",
+		"/Users/ronaldsardarian/Documents/git/glslViewerShaderExperiments/Nylon.frag",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557440919/Hypno/home/pi/VIDOS/src/io/ndi.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557866546/Hypno/home/pi/VIDOS/src/button.h",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557791560/Hypno/home/pi/VIDOS/Makefile",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557871946/Hypno/home/pi/VIDOS/src/Shader.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557440904/Hypno/home/pi/VIDOS/main.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557440038/Hypno/home/pi/VIDOS/install.sh",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557440875/Hypno/home/pi/VIDOS/src/input.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557440850/Hypno/home/pi/VIDOS/src/io/oscListener.h",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557429758/Hypno/home/pi/VIDOS/src/io/oscListener.h",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557357499/Hypno/home/pi/VIDOS/Shaders/myShader0.frag",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557338026/Hypno/home/pi/VIDOS/src/input.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557338982/Hypno/home/pi/VIDOS/src/input.h",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557357553/Hypno/home/pi/VIDOS/src/Shader.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557361554/Hypno/home/pi/VIDOS/install.sh",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557337961/Hypno/home/pi/VIDOS/main.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557259363/Hypno/home/pi/VIDOS/main.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557259735/Hypno/home/pi/VIDOS/src/input.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557259842/Hypno/home/pi/VIDOS/src/input.h",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557258635/Hypno/home/pi/VIDOS/README.md",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557257238/Hypno/home/pi/VIDOS/install.sh",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557257122/Hypno/home/pi/VIDOS/README.md",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557253875/Hypno/home/pi/VIDOS/LaunchHypno.sh",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557253883/Hypno/home/pi/VIDOS/install.sh",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1557255868/Hypno/home/pi/VIDOS/README.md",
+		"/Library/NewTek NDI SDK/examples/C++/NDIlib_Send_Video/NDIlib_Send_Video.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1556901236/Hypno/home/pi/VIDOS/src/io/ndi.cpp",
+		"/var/folders/jf/rn98s9gj5310847wmn64g2tm0000gn/T/sublime-sftp-browse-1556901204/Hypno/home/pi/VIDOS/src/io/ndi.h"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/input.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36094,
+						"regions":
+						{
+							"col_008000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										32805,
+										32810
+									]
+								],
+								"scope": "col_008000FF"
+							},
+							"col_008000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
+								"regions":
+								[
+									[
+										32797,
+										32797
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										31773,
+										31778
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										31749,
+										31749
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								5730,
+								5735
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4115.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/input.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								452,
+								452
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 118.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/osc/oscSender.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1643,
+								1643
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.astyle_error_message":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 30.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "Iron.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
