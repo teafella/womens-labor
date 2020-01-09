@@ -7,6 +7,6 @@ cd $DIR
 # do
 # git pull
 
-sudo ./main.out
+sudo ./main.out test
 
 # done

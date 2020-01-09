@@ -14,6 +14,7 @@
 #include "input.h"
 #include "src/util.h"
 
+bool USE_SPECTRUM = false;
 
 class ScopedPaHandler
 {
@@ -44,7 +45,9 @@ Audio::Audio(): stream(0), left_phase(0), right_phase(0) {
 
 }
 
-Audio::Audio(Input* in) {
+Audio::Audio(bool test, Input* in) {
+	engine_on_ = test;
+	std::cout << "RUNNING TEST AUDIO ENGINE" << std::endl;
 	inputs = in;
 	spectrum_ = std::vector<float>(SPECTRUM_SIZE);
 	mod_phases = std::vector<float>(SPECTRUM_SIZE);
@@ -214,43 +217,74 @@ int Audio::paCallbackMethod(const void *inputBuffer, void *outputBuffer,
 	float carrierOctaveRange = 8.;
 	float modOctaveRange = 8.;
 
-	float carrier_pitch = (pitch_/1800.0);
+	float carrier_pitch = 1. - (pitch_ / 1800.0);
 	float playSpeed = (thisTableSize / (float)SAMPLE_RATE * hertz) * (pow(2, (carrier_pitch * (carrierOctaveRange * 12.0)) / 12. ) ); //(quantized)don't cast if you want free frequency control
 
+	bool FM = true;
 	std::vector<float> mod_speeds = std::vector<float>(SPECTRUM_SIZE);
-	for ( int x = 0; x < SPECTRUM_SIZE; ++x){
-		float this_ratio = GetSpectrum(x);
-		mod_speeds[x] = playSpeed * (pow(2, (int)(this_ratio * (modOctaveRange * 12)) / 12. ) );
+	for ( int x = 0; x < SPECTRUM_SIZE; ++x) {
+		if (FM) {
+			//ratio based FM offsets
+			float this_ratio = GetSpectrum(x);
+			mod_speeds[x] = (thisTableSize / (float)SAMPLE_RATE * hertz) * (pow(2, (int)( (carrier_pitch + this_ratio) * (modOctaveRange * 12)) / 12. ) );
+		}
+		else{
+		// 	//pitches for sin wave additive synthesis
+			mod_speeds[x] = (thisTableSize / (float)SAMPLE_RATE * hertz) * (pow(2, (int)( (carrier_pitch + (x) * (modOctaveRange * 12)) / 12. ) ));
+		}
 	}
 
 	float NUM_MODULATORS = 3;
 
+
+
 	if (thisTableSize != 0) {
 		for ( i = 0; i < framesPerBuffer; i++ )
 		{
-			for ( int x = 0; x < NUM_MODULATORS; ++x){
+			for ( int x = 0; x < NUM_MODULATORS; ++x) {
 				mod_phases[x] += mod_speeds[x];
 				while ( mod_phases[x] >= thisTableSize ) mod_phases[x] -= thisTableSize;
 			}
-			
+
 			carrier_phase += playSpeed;
 			if (carrier_phase < 0) carrier_phase = 0;
 			while ( carrier_phase >= thisTableSize ) carrier_phase -= thisTableSize;
 
 			out_phase = carrier_phase;
-			// for ( int x = 0; x < NUM_MODULATORS; ++x){
-			// 	out_phase *= sine[ (int)mod_phases[x] ];
-			// 	if (out_phase < 0) out_phase = 0;
-			// 	while ( out_phase >= thisTableSize ) out_phase -= thisTableSize;
-			// }
-			
-			if (on_) {
-				*out++ = tanh(sine[(int)out_phase]);  /* left */
-				float left = *out;
-				*out++ = tanh(sine[(int)out_phase]);  /* right */
-				float right = *out;
+			if (USE_SPECTRUM) {
+
+				if (FM) {
+					for ( int x = 0; x < NUM_MODULATORS; ++x) {
+						out_phase *= sine[ (int)mod_phases[x] ];
+						if (out_phase < 0) out_phase = 0;
+						while ( out_phase >= thisTableSize ) out_phase -= thisTableSize;
+					}
+				}
+				else{
+					for ( int x = 0; x < NUM_MODULATORS; ++x) {
+						mod_phases[x] += mod_speeds[x];
+						if (mod_phases[x] < 0) mod_phases[x] = 0;
+						while ( mod_phases[x] >= thisTableSize ) mod_phases[x] -= thisTableSize;
+					}
+				}
 			}
-			else{
+
+			if (on_ && engine_on_) {
+				if(FM){
+					*out++ = tanh(sine[(int)out_phase]);  /* left */
+					float left = *out;
+					*out++ = tanh(sine[(int)out_phase]);  /* right */
+					float right = *out;
+				}
+				else { // additive synth
+					for( int x = 0; x < NUM_MODULATORS; ++x) {
+						*out++ += sine[ (int)mod_phases[x] ] ;
+					}
+					float left = tanh(*out);
+					float right = tanh(*out);
+				}
+			}
+			else {
 				*out++ = 0;  /* left */
 				float left = *out;
 				*out++ = 0;  /* right */
@@ -290,7 +324,7 @@ void Audio::SetSpectrum(int index, float val) {
 }
 
 
-float Audio::GetSpectrum(int index){
+float Audio::GetSpectrum(int index) {
 	float ret = 0.0;
 	if (spectrum_mutex_.try_lock()) {
 		ret = spectrum_[index];

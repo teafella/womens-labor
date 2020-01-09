@@ -45,9 +45,11 @@ def main(osc_ip, port):
 	# 	return
 	print("Sensor Created")
 	distance_sensor.SensorInit()
+	distance_sensor.StartTemperatureUpdate()
+	distance_sensor.SetDistanceMode(1)
 	print("Sensor Initialized")
 	# distance_sensor.StopRanging()
-	distance_sensor.SetROI(16, 16);
+	distance_sensor.SetROI(10, 16);
 	roi = distance_sensor.GetROI_XY()
 	print("Sensor ROI is: X:", roi[0], " Y:", roi[1]);
 	distance_sensor.SetInterMeasurementInMs(33)

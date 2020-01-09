@@ -17,7 +17,7 @@ int main (int argc, char *argv[])
   if (argc == 2) {
     if (strcmp(argv[1], "test") == 0 ) {
       run_tests = true;
-      std::cout<< "Running in test mode." <<std::endl;
+      std::cout<< "Running in test mode. Test audio engine is on." <<std::endl;
     }
   }
 
@@ -25,7 +25,7 @@ int main (int argc, char *argv[])
   Input* input = new Input(run_tests);
 
   //Start Audio Engine
-  Audio* audio = new Audio(input);
+  Audio* audio = new Audio(run_tests, input);
 
   // frame_begin = Util::ProgramTime();
   // while (!end_program) {
@@ -41,8 +41,8 @@ int main (int argc, char *argv[])
   //   }
 
   // }
-
   delete(audio);
+
   fflush(stdout);
   fprintf(stderr, "%s.\n", strerror(errno));
   return 0;

@@ -27,7 +27,7 @@ class Audio
 {
 public:
 	Audio();
-	Audio(Input* in);
+	Audio(bool test, Input* in);
 	~Audio();
 
 	bool open(PaDeviceIndex index);
@@ -46,6 +46,7 @@ public:
 
 
 private:
+	bool engine_on_ = false;
 	std::thread thread_;
 	void createWaveTable();
 
