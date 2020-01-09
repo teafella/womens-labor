@@ -15,7 +15,7 @@ using ::__strcmp__;  // avoid error: E2316 '__strcmp__' is not a member of 'std'
 #include <lib/oscpack/osc/OscOutboundPacketStream.h>
 #include <lib/oscpack/ip/UdpSocket.h>
 
-#define ADDRESS "MacBoi.local"
+#define ADDRESS "iron.local"
 #define PORT 8000
 #define PRINT_PACKETS true
 #define OUTPUT_BUFFER_SIZE 1024
@@ -23,30 +23,40 @@ using ::__strcmp__;  // avoid error: E2316 '__strcmp__' is not a member of 'std'
 class OSCSender {
 public:
     OSCSender() {
-
+        transmit_socket_ = new UdpTransmitSocket( IpEndpointName( ADDRESS, PORT ) );
     }
 
     void send(std::string address, int value) {
-
-        UdpTransmitSocket transmitSocket = UdpTransmitSocket ( IpEndpointName( ADDRESS, PORT ) );
-
-        char buffer[300];
-
-        osc::OutboundPacketStream p( buffer, 300);
+        char buffer[OUTPUT_BUFFER_SIZE];
+        osc::OutboundPacketStream p( buffer, OUTPUT_BUFFER_SIZE);
         p << osc::BeginBundleImmediate
           << osc::BeginMessage( address.c_str() );
         p << value;
         p << osc::EndMessage << osc::EndBundle;
 
-        transmitSocket.Send( p.Data(), p.Size() );
+         transmit_socket_->Send( p.Data(), p.Size() );
         p.Clear();
 
-        std::cout << "Sent some OSC of size " << 300 << std::endl;
+        // std::cout << "Sent some OSC of size " << OUTPUT_BUFFER_SIZE << std::endl;
+    }
 
+    void send(std::string address, int value1, float value2) {
+
+        char buffer[OUTPUT_BUFFER_SIZE];
+        osc::OutboundPacketStream p( buffer, OUTPUT_BUFFER_SIZE);
+        p << osc::BeginBundleImmediate
+          << osc::BeginMessage( address.c_str() );
+        p << value1;
+        p << value2;
+        p << osc::EndMessage << osc::EndBundle;
+
+        transmit_socket_->Send( p.Data(), p.Size() );
+        p.Clear();
+
+        // std::cout << "Sent some OSC of size " << OUTPUT_BUFFER_SIZE << std::endl;
     }
 private:
-    ;
-
+    UdpTransmitSocket* transmit_socket_;
 };
 
 

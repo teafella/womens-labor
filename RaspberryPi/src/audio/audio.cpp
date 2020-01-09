@@ -6,7 +6,7 @@
 #include <math.h>
 #include <iostream>
 #include <cstring>
-#include <time.h>  
+#include <time.h>
 #include <vector>
 #include <algorithm>
 
@@ -36,29 +36,37 @@ private:
 	PaError _result;
 };
 
-Audio::Audio(): stream(0), left_phase(0), right_phase(0){
+Audio::Audio(): stream(0), left_phase(0), right_phase(0) {
 	//dont do anything here ( unless you check for duplicate threads later)
 	// createWaveTable();
 	// //start the audio thread (basically just sleeps while audio runs in the background, not sure how to do this correctly)
 	// thread = std::thread(&Audio::run, this );
-	
+
 }
 
-Audio::Audio(Input* in){
+Audio::Audio(Input* in) {
 	inputs = in;
+	spectrum_ = std::vector<float>(SPECTRUM_SIZE);
+	mod_phases = std::vector<float>(SPECTRUM_SIZE);
+
+	//set up callbacks
+	in->SetOnCallback(std::bind(&Audio::SetOn, this, std::placeholders::_1));
+	in->SetPitchCallback(std::bind(&Audio::SetPitch, this, std::placeholders::_1));
+	in->SetSpectrumCallback(std::bind(&Audio::SetSpectrum, this, std::placeholders::_1, std::placeholders::_2));
+
 	createWaveTable();
 
 	//start the audio thread (basically just sleeps while audio runs in the background, not sure how to do this correctly)
-	thread = std::thread(&Audio::run, this );
+	thread_ = std::thread(&Audio::run, this );
 }
 
 Audio::~Audio() {
 	stop();
 	close();
-	thread.join();
+	thread_.join();
 }
 
-void Audio::createWaveTable(){
+void Audio::createWaveTable() {
 	/* initialise sinusoidal wavetable */ //replace this with something more interesting
 	for ( int i = 0; i < TABLE_SIZE; i++ )
 	{
@@ -66,13 +74,13 @@ void Audio::createWaveTable(){
 	}
 }
 
-void Audio::loadByteWaveTable(unsigned char* table, int size){
+void Audio::loadByteWaveTable(unsigned char* table, int size) {
 	loadedWaveTable = table;
 	loadedWaveTableSize = size;
 }
 
 
-bool Audio::run(){
+bool Audio::run() {
 	//set up last frame buffer last write location
 
 	ScopedPaHandler paInit;
@@ -87,10 +95,10 @@ bool Audio::run(){
 	{
 		printf("Playing a sin wave\n" );
 
-			if (start()) {
-				
-				while(1){};
-			}
+		if (start()) {
+
+			while (1) {};
+		}
 	}
 	return true;
 
@@ -201,38 +209,58 @@ int Audio::paCallbackMethod(const void *inputBuffer, void *outputBuffer,
 
 	createWaveTable();
 
-	float hertz = 32.70; // C1
+	float hertz = 65.41;//32.70; // C1
 
 	float carrierOctaveRange = 8.;
 	float modOctaveRange = 8.;
 
-	float playSpeed = (thisTableSize/(float)SAMPLE_RATE * hertz) * (pow(2, (int)(0.5 * (carrierOctaveRange * 12))/12. ) ); //(quantized)don't cast if you want free frequency control
+	float carrier_pitch = (pitch_/1800.0);
+	float playSpeed = (thisTableSize / (float)SAMPLE_RATE * hertz) * (pow(2, (carrier_pitch * (carrierOctaveRange * 12.0)) / 12. ) ); //(quantized)don't cast if you want free frequency control
 
-	float ratio = 0.25; // can be CV
-	float modSpeed = playSpeed * (pow(2, (int)(ratio * (modOctaveRange * 12))/12. ) );
+	std::vector<float> mod_speeds = std::vector<float>(SPECTRUM_SIZE);
+	for ( int x = 0; x < SPECTRUM_SIZE; ++x){
+		float this_ratio = GetSpectrum(x);
+		mod_speeds[x] = playSpeed * (pow(2, (int)(this_ratio * (modOctaveRange * 12)) / 12. ) );
+	}
 
-	if(thisTableSize != 0){
+	float NUM_MODULATORS = 3;
+
+	if (thisTableSize != 0) {
 		for ( i = 0; i < framesPerBuffer; i++ )
 		{
-			mod_phase += modSpeed;
-			while ( mod_phase >= thisTableSize ) mod_phase -= thisTableSize;
-
+			for ( int x = 0; x < NUM_MODULATORS; ++x){
+				mod_phases[x] += mod_speeds[x];
+				while ( mod_phases[x] >= thisTableSize ) mod_phases[x] -= thisTableSize;
+			}
+			
 			carrier_phase += playSpeed;
-			if(carrier_phase < 0) carrier_phase = 0;
+			if (carrier_phase < 0) carrier_phase = 0;
 			while ( carrier_phase >= thisTableSize ) carrier_phase -= thisTableSize;
 
-			out_phase = carrier_phase * sine[(int)mod_phase];
-			if(out_phase < 0) out_phase = 0;
-			while ( out_phase >= thisTableSize ) out_phase -= thisTableSize;
+			out_phase = carrier_phase;
+			// for ( int x = 0; x < NUM_MODULATORS; ++x){
+			// 	out_phase *= sine[ (int)mod_phases[x] ];
+			// 	if (out_phase < 0) out_phase = 0;
+			// 	while ( out_phase >= thisTableSize ) out_phase -= thisTableSize;
+			// }
+			
+			if (on_) {
+				*out++ = tanh(sine[(int)out_phase]);  /* left */
+				float left = *out;
+				*out++ = tanh(sine[(int)out_phase]);  /* right */
+				float right = *out;
+			}
+			else{
+				*out++ = 0;  /* left */
+				float left = *out;
+				*out++ = 0;  /* right */
+				float right = *out;
+			}
 
-			*out++ = sine[(int)out_phase];  /* left */
-			float left = *out;
-			*out++ = sine[(int)out_phase];  /* right */
-			float right = *out;
 		}
 	}
-	else{
-		std::cout<< "WARNING: No Wavetable Loaded."<<std::endl;
+	else {
+		std::cout << "WARNING: No Wavetable Loaded." << std::endl;
 	}
 
 	return paContinue;
@@ -242,6 +270,33 @@ int Audio::paCallbackMethod(const void *inputBuffer, void *outputBuffer,
 void Audio::paStreamFinishedMethod()
 {
 	printf( "Stream Completed: %s\n", message );
+}
+
+
+void Audio::SetOn(bool val) {
+	// std::cout<< "set on in audio: " << val << std::endl;
+	on_ = val;
+}
+void Audio::SetPitch(unsigned int val) {
+	// std::cout<< "set pitch in audio: " << val << std::endl;
+	pitch_ = val;
+}
+void Audio::SetSpectrum(int index, float val) {
+	if (spectrum_mutex_.try_lock()) {
+		// std::cout<< "set spectrum in audio: "<< index<< " " << val << std::endl;
+		spectrum_[index] = val;
+		spectrum_mutex_.unlock();
+	}
+}
+
+
+float Audio::GetSpectrum(int index){
+	float ret = 0.0;
+	if (spectrum_mutex_.try_lock()) {
+		ret = spectrum_[index];
+		spectrum_mutex_.unlock();
+	}
+	return ret;
 }
 
 #endif

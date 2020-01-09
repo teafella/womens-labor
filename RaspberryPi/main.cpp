@@ -1,35 +1,13 @@
-#include <stdio.h>
-#include <fcntl.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
-#include <assert.h>
-#include <unistd.h>
-#include <string>
 #include <iostream>
-#include <fstream>
-
 #include <linux/input.h>
 
 //Global defines
 #include <time.h>
-#define PRINT_FRAMETIME false
 
 //Internal includes
 #include "src/util.h"
 #include "src/audio/audio.h"
 #include "src/input.h"
-
-int end_program = 0;
-
-//Frame Timing
-float frame_begin;
-float frameEnd;
-float frame_time;
-//-------------------------
-
-clock_t begin = clock();
-bool programRunning = true;
 
 int main (int argc, char *argv[])
 {
@@ -49,7 +27,7 @@ int main (int argc, char *argv[])
   //Start Audio Engine
   Audio* audio = new Audio(input);
 
-  frame_begin = Util::ProgramTime();
+  // frame_begin = Util::ProgramTime();
   // while (!end_program) {
   //   frame_time = (Util::ProgramTime() - frame_begin) / 100.;
   //   frame_begin = Util::ProgramTime();

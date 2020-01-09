@@ -15,6 +15,8 @@
 
 //VIDOS classes
 #include "src/osc/oscSender.h"
+#include "src/osc/oscListener.h"
+#include <lib/oscpack/ip/PacketListener.h>
 #include "src/util.h"
 
 //wiringPi includes
@@ -22,8 +24,6 @@
 #define SPI_CHAN 0
 #include <wiringPi.h>
 #include <softPwm.h>
-
-const int SPECTRUM_SIZE = 18;
 
 Input* Input::singleton_ = 0;
 
@@ -34,8 +34,7 @@ Input::Input(bool run_tests) {
 	spectrum_ = std::vector<float>(SPECTRUM_SIZE);
 	//setup OSC control
 	SetupSerial();
-
-	SendOSCTest();
+	InitOSC();
 
 }
 
@@ -56,17 +55,20 @@ bool Input::SendOSCTest() {
 //reads serial inputs from Arduino, make sure to setupSerial() before calling this function
 bool Input::ReadSerial() {
 	while (serial_thread_running_) {
+
 		char buff[0x1000];
 		ssize_t rd = read(serial_fd_, buff, 100);
+		// std::cout<< "Read Serial: "<<  buff <<std::endl ;
 		if (rd != 0) {
 			if (strchr(buff, '\n') != NULL) {
 				char* tok;
 				int index = -1;
+
 				tok = strtok(buff, " ");
 				if (tok != NULL) {
 
 					index = atoi(tok);
-					std::cout<< "Index: "<< index <<std::endl;
+					// std::cout<< "Index: "<< index ;
 				}
 				else {
 					//~ return false;
@@ -74,36 +76,123 @@ bool Input::ReadSerial() {
 				tok = strtok(NULL, "\n");
 
 				if (tok != NULL) {
-					printf("Value: %s\n", tok);
+					// printf(" Value: %s\n", tok);
+					// std::cout<<std::endl;
 					int val = atoi(tok);
-					if (val < 0) {
-						val = 0;
-					}
-					else if (val > 1024) {
-						val = 1024;
-					}
 
 					///set vars
+					// 0 is on off for note
+					if (index == 0) {
+						SetOn(val);
+					}
 
+					if (index == 1) {
+						SetPitch(val);
+					}
 
+					if (index >= 2  && index < 19) {
+						float spec_val = atof(tok) / 200.;
+						SetSpectrum(index - 2, spec_val );
+					}
 				}
+
 			}
 
-
 		}
+
+		// std::cout<< "Finished Reading serial: " << rd << std::endl ;
 	}
 
 	return true;
 }
 
+void Input::InitOSC() {
+	SendOSCTest();
+	osc_thread_running_ = true;
+	osc_thread_ = std::thread(&Input::ReadOSC, this);
+
+}
+
+void Input::ReadOSC() {
+	try {
+		MyPacketListener listener;
+		UdpListeningReceiveSocket s(
+		    IpEndpointName( IpEndpointName::ANY_ADDRESS, PORT ),
+		    &listener );
+
+		listener.SetOSCCallback(std::bind(&Input::OnOSC, this, std::placeholders::_1, std::placeholders::_2));
+
+		std::cout << "OSC: Listening for input on port " << PORT << "...\n";
+		s.Run();
+	}
+	catch (const std::exception &exc) {
+		std::cerr << "OSC: " << exc.what();
+	}
+}
+
+void Input::OnOSC(std::string address, int val) {
+	// std::cout << "got some osc" << std::endl;
+	if (address.compare("/pitch") == 0) {
+		//set pitch without sending osc
+		pitch_ = val;
+		if (onPitch) {
+			onPitch(val);
+		}
+	}
+	
+}
+
+void Input::SetOn(bool val) {
+	on_ = val;
+	// std::cout<< "Set on: " << on_ << std::endl;
+	osc_sender_.send("/on", val);
+	if (onOn) {
+		onOn(val);
+	}
+}
+
+void Input::SetPitch(unsigned int val) {
+	pitch_ = val;
+	// std::cout<< "Set pitch: " << pitch_ << std::endl;
+	osc_sender_.send("/pitch", val);
+	if (onPitch) {
+		onPitch(val);
+	}
+}
+
+void Input::SetSpectrum(int index, float val) {
+	// make sure val is being converted correctly from float here
+	spectrum_[index] = val;
+	osc_sender_.send("/spectrum", index, val);
+	if (onSpectrum) {
+		onSpectrum(index, val);
+	}
+}
+
+void Input::SetOnCallback(std::function<void(bool)> callback) {
+	onOn = callback;
+}
+void Input::SetPitchCallback(std::function<void(unsigned int)> callback) {
+	onPitch = callback;
+}
+void Input::SetSpectrumCallback(std::function<void(int, float)> callback) {
+	onSpectrum = callback;
+}
+
 bool Input::SetupSerial() {
-	const char *dev = "/dev/ttyUSB0";
+	const char *dev = SERIAL_PATH;
+	const char *alt_dev = ALT_SERIAL_PATH;
 
 	serial_fd_ = open(dev, O_RDWR | O_NOCTTY | O_NDELAY | O_NONBLOCK);
 	fcntl(serial_fd_, F_SETFL, 0);
 	if (serial_fd_ == -1) {
-		fprintf(stderr, "Cannot open %s: %s.\n", dev, strerror(errno));
-		return false;
+		fprintf(stderr, "Cannot open %s: %s.\n Trying Alt Path\n", dev, strerror(errno));
+		serial_fd_ = open(alt_dev, O_RDWR | O_NOCTTY | O_NDELAY | O_NONBLOCK);
+		fcntl(serial_fd_, F_SETFL, 0);
+		if (serial_fd_ == -1) {
+			fprintf(stderr, "Cannot open %s: %s.\n", dev, strerror(errno));
+			return false;
+		}
 	}
 
 	serial_thread_running_ = true;
