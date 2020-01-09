@@ -1,0 +1,11 @@
+#N canvas 866 95 1232 310 10;
+#X text 29 245 Matthew Blessing \, LSU CCT;
+#X obj 409 34 abstractions/ironingBoardSynth_v5~;
+#X obj 30 34 abstractions/receiveFromArduino_v5;
+#X text 29 232 board patch - 12/16/2019;
+#X text 28 219 Ironing Board v5 \, LiDAR & Spectroscopy version;
+#X text 871 177 1 In Media > Audio Settings \, choose correct soundcard
+;
+#X text 871 221 3 Adjust Blue Gain slider to an optimal level;
+#X text 871 199 2 Set OSC Receive Port \, if wrong;
+#X text 871 244 4 Let me know if things aren't working;

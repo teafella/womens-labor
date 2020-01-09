@@ -15,49 +15,48 @@ using ::__strcmp__;  // avoid error: E2316 '__strcmp__' is not a member of 'std'
 #include <lib/oscpack/osc/OscOutboundPacketStream.h>
 #include <lib/oscpack/ip/UdpSocket.h>
 
-#define ADDRESS "MacBoi.local"
-#define PORT 7000
+#define ADDRESS "iron.local"
+#define PORT 8000
 #define PRINT_PACKETS true
-
 #define OUTPUT_BUFFER_SIZE 1024
 
 class OSCSender {
 public:
     OSCSender() {
-
+        transmit_socket_ = new UdpTransmitSocket( IpEndpointName( ADDRESS, PORT ) );
     }
 
-    void send(int data_size, unsigned char* in_data, int frame_width, int frame_height ) {
+    void send(std::string address, int value) {
+        char buffer[OUTPUT_BUFFER_SIZE];
+        osc::OutboundPacketStream p( buffer, OUTPUT_BUFFER_SIZE);
+        p << osc::BeginBundleImmediate
+          << osc::BeginMessage( address.c_str() );
+        p << value;
+        p << osc::EndMessage << osc::EndBundle;
 
-        // unsigned char* last_frame_data_ = new unsigned char[data_size];
-        // memcpy(last_frame_data_, in_data, data_size * sizeof(unsigned char) );
+         transmit_socket_->Send( p.Data(), p.Size() );
+        p.Clear();
 
-        char* frame_string = reinterpret_cast<char*>(in_data);
+        // std::cout << "Sent some OSC of size " << OUTPUT_BUFFER_SIZE << std::endl;
+    }
 
-        UdpTransmitSocket transmitSocket = UdpTransmitSocket ( IpEndpointName( ADDRESS, PORT ) );
+    void send(std::string address, int value1, float value2) {
 
-        char buffer[data_size];
+        char buffer[OUTPUT_BUFFER_SIZE];
+        osc::OutboundPacketStream p( buffer, OUTPUT_BUFFER_SIZE);
+        p << osc::BeginBundleImmediate
+          << osc::BeginMessage( address.c_str() );
+        p << value1;
+        p << value2;
+        p << osc::EndMessage << osc::EndBundle;
 
-        osc::OutboundPacketStream p( buffer, data_size );
-        for (int y = 0 ; y < frame_height; ++y) {
-            p << osc::BeginBundleImmediate
-              << osc::BeginMessage( "/frame" );
-            for ( int x = 0; x < frame_width; ++x) {
-                p << (frame_string[x + y]);
-            }
-            p << osc::EndMessage << osc::EndBundle;
+        transmit_socket_->Send( p.Data(), p.Size() );
+        p.Clear();
 
-            transmitSocket.Send( p.Data(), p.Size() );
-            p.Clear();
-            // transmitSocket.Send( frame_string , sizeof(char) * 8 );
-        }
-
-        // std::cout << "Sent some Frame OSC of size " << data_size << std::endl;
-
+        // std::cout << "Sent some OSC of size " << OUTPUT_BUFFER_SIZE << std::endl;
     }
 private:
-    ;
-
+    UdpTransmitSocket* transmit_socket_;
 };
 
 

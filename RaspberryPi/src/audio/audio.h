@@ -4,12 +4,13 @@
 #include "lib/portaudio.h"
 #include <thread>
 #include <mutex>
+#include <atomic>
 #include <list>
 #include <vector>
 #include <time.h>
 
 #define SAMPLE_RATE   (192000)
-#define FRAMES_PER_BUFFER   (2560)
+#define FRAMES_PER_BUFFER   (256)
 #define TABLE_SIZE   (800)
 
 #ifndef M_PI
@@ -18,13 +19,15 @@
 
 #define RECORD_BUFFER  (2560)
 
+// dont forget to sudo apt-get install libasound2-dev
+
 class Input;
 
 class Audio
 {
 public:
 	Audio();
-	Audio(Input* in);
+	Audio(bool test, Input* in);
 	~Audio();
 
 	bool open(PaDeviceIndex index);
@@ -33,13 +36,18 @@ public:
 	bool stop();
 	bool run();
 
-	int getFramesPerBuffer();
-	bool hasNewBuffer();
-	std::vector<float> getBuffer(int index);
-
 	void loadByteWaveTable(unsigned char* table, int size);
 
+	//input get/set for callbacks
+	void SetOn(bool val);
+	void SetPitch(unsigned int val);
+	void SetSpectrum(int index, float val);
+	float GetSpectrum(int index);
+
+
 private:
+	bool engine_on_ = false;
+	std::thread thread_;
 	void createWaveTable();
 
 	int paCallbackMethod(const void *inputBuffer, void *outputBuffer,
@@ -80,27 +88,22 @@ private:
 	float sine[TABLE_SIZE];
 	unsigned char* loadedWaveTable;
 	int loadedWaveTableSize = 0;
-	bool newBufferFlag = false;
-	std::vector< float > frameBuffer[2] = {std::vector<float>(RECORD_BUFFER, 0.0), std::vector<float>(RECORD_BUFFER, 0.0)};
-	std::vector<float>::iterator lastFrameL;
-	std::vector<float>::iterator lastFrameR;
-	//std::vector<float> buffer = std::vector<float>(RECORD_BUFFER, 0.0);
 
-	
-	float left_phase;
 	float carrier_phase;
-	float mod_phase;
+	std::vector<float> mod_phases;
+	float left_phase;
 	float right_phase;
-	float fm_phase = 0.;
+	float out_phase;
 	char message[20];
-	std::thread thread;
-	std::mutex recordMutex;
-	
-
-	std::vector<float> bufferCopyL = std::vector<float>(FRAMES_PER_BUFFER, 0.);
-	std::vector<float> bufferCopyR = std::vector<float>(FRAMES_PER_BUFFER, 0.);
 
 	clock_t begin;
+
+	//Input Params
+	std::atomic<bool> on_;
+	std::atomic<unsigned int> pitch_;
+	std::vector<float> spectrum_;
+	std::mutex spectrum_mutex_;
+
 };
 
 #endif
