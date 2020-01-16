@@ -34,8 +34,9 @@ Input::Input(bool run_tests) {
 	spectrum_ = std::vector<float>(SPECTRUM_SIZE);
 	//setup OSC control
 	SetupSerial();
-	InitOSC();
-
+	if (run_tests) {
+		InitOSC();
+	}
 }
 
 Input::~Input() {
@@ -139,7 +140,7 @@ void Input::OnOSC(std::string address, int val) {
 			onPitch(val);
 		}
 	}
-	
+
 }
 
 void Input::SetOn(bool val) {

@@ -236,6 +236,8 @@ int Audio::paCallbackMethod(const void *inputBuffer, void *outputBuffer,
 
 	float NUM_MODULATORS = 3;
 
+	std::cout << ""
+
 
 
 	if (thisTableSize != 0) {
