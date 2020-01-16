@@ -3,7 +3,10 @@
 
 //Global defines
 #include <time.h>
+<<<<<<< HEAD
 #include <unistd.h>
+=======
+>>>>>>> a295da93f32c7c26f5946420c230bad1b4ee1198
 
 //Internal includes
 #include "src/util.h"
@@ -19,15 +22,17 @@ int main (int argc, char *argv[])
     if (strcmp(argv[1], "test") == 0 ) {
       run_tests = true;
       std::cout << "Running in test mode. Test audio engine is on." << std::endl;
+
     }
   }
 
   //Start Inputs
   Input* input = new Input(run_tests);
   //Start Audio Engine
-  // if (run_tests) {
+
   Audio* audio = new Audio(run_tests, input);
-  // }
+
+
   // frame_begin = Util::ProgramTime();
   // while (!end_program) {
   //   frame_time = (Util::ProgramTime() - frame_begin) / 100.;
@@ -41,7 +46,6 @@ int main (int argc, char *argv[])
   //     std::cout << "Framerate Dip: " << frame_time  << std::endl;
   //   }
 
-  // }
   if (run_tests) {
     delete(audio);
   }
@@ -50,6 +54,7 @@ int main (int argc, char *argv[])
       usleep(10000000);
     }
   }
+
 
   fflush(stdout);
   fprintf(stderr, "%s.\n", strerror(errno));

@@ -29,6 +29,7 @@ def SendPitch(val):
 		val = (val * weight) + (last_pitch * (1-weight))
 		SendOSC("/pitch", int(val) )
 		print("Smoothed: %s" % int(val) )
+
 		# print("sent /pitch " + str(val) )
 		last_pitch = val
 	
@@ -52,7 +53,9 @@ def main(osc_ip, port):
 	distance_sensor.SetDistanceMode(1)
 	print("Sensor Initialized")
 	# distance_sensor.StopRanging()
+
 	distance_sensor.SetROI(11, 16);
+
 	roi = distance_sensor.GetROI_XY()
 	print("Sensor ROI is: X:", roi[0], " Y:", roi[1]);
 	distance_sensor.SetInterMeasurementInMs(33)
