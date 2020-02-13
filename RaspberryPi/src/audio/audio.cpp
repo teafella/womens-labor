@@ -47,7 +47,9 @@ Audio::Audio(): stream(0), left_phase(0), right_phase(0) {
 
 Audio::Audio(bool test, Input* in) {
 	engine_on_ = test;
-	std::cout << "RUNNING TEST AUDIO ENGINE" << std::endl;
+	if(engine_on_){
+		std::cout << "RUNNING TEST AUDIO ENGINE" << std::endl;
+	}
 	inputs = in;
 	spectrum_ = std::vector<float>(SPECTRUM_SIZE);
 	mod_phases = std::vector<float>(SPECTRUM_SIZE);
@@ -58,9 +60,10 @@ Audio::Audio(bool test, Input* in) {
 	in->SetSpectrumCallback(std::bind(&Audio::SetSpectrum, this, std::placeholders::_1, std::placeholders::_2));
 
 	createWaveTable();
-
+	if(engine_on){
 	//start the audio thread (basically just sleeps while audio runs in the background, not sure how to do this correctly)
 	thread_ = std::thread(&Audio::run, this );
+	}
 }
 
 Audio::~Audio() {
@@ -96,7 +99,7 @@ bool Audio::run() {
 
 	if (open(Pa_GetDefaultOutputDevice()))
 	{
-		printf("Playing a sin wave\n" );
+		printf("Initialized Test Audio Engine.\n" );
 
 		if (start()) {
 

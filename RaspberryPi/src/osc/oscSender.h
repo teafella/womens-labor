@@ -17,14 +17,14 @@ using ::__strcmp__;  // avoid error: E2316 '__strcmp__' is not a member of 'std'
 
 #define ADDRESS "127.0.0.1"
 
-#define PORT 8000
+#define SEND_PORT 7000
 #define PRINT_PACKETS true
 #define OUTPUT_BUFFER_SIZE 1024
 
 class OSCSender {
 public:
     OSCSender() {
-        transmit_socket_ = new UdpTransmitSocket( IpEndpointName( ADDRESS, PORT ) );
+        transmit_socket_ = new UdpTransmitSocket( IpEndpointName( ADDRESS, SEND_PORT ) );
     }
 
     void send(std::string address, int value) {
